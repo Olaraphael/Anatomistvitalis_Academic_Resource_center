@@ -13,6 +13,8 @@ This repository includes a GitHub Actions workflow that deploys the static websi
 
    https://olaraphael.github.io/Anatomistvitalis_Academic_Resource_center/
 
+If the workflow reports that the Pages site was not found, return to **Settings → Pages**, confirm **GitHub Actions** is selected, save the setting, and rerun the workflow from the **Actions** tab.
+
 ## Current release limitations
 
 - This is a static front-end release; it does not yet have server-backed student accounts, cross-device synchronisation, an administrator dashboard or a persistent database.
