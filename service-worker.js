@@ -16,7 +16,7 @@ const CORE_ASSETS = [
   "./diagrams/neural-tube-development.svg",
   "./diagrams/germ-layer-derivatives.svg",
   "./memory-aids/index.html",
-  "./topics/index.htmlindex.html",
+  "./topics/index.html",
   "./topics/embryology-history-introduction/index.html",
   "./topics/gametogenesis-fertilisation/index.html",
   "./topics/week-one-cleavage-blastocyst/index.html",
