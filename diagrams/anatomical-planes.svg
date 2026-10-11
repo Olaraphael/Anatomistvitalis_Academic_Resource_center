@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+<title id="title">The three principal anatomical planes</title>
+<desc id="desc">Three schematic human figures illustrate the sagittal plane dividing left and right, the frontal plane dividing anterior and posterior, and the transverse plane dividing superior and inferior portions.</desc>
+<rect width="900" height="420" rx="24" fill="#f3f8fb"/>
+<g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+<g transform="translate(150 32)">
+<rect x="-120" y="0" width="240" height="340" rx="18" fill="#ffffff" stroke="#dbe7ee"/>
+<text x="0" y="32" font-size="19" font-weight="700" fill="#102d43">Sagittal plane</text>
+<text x="0" y="55" font-size="13" fill="#536c7d">Left and right</text>
+<circle cx="0" cy="91" r="22" fill="#f0c9ad" stroke="#b98468" stroke-width="2"/>
+<path d="M-28 118 Q-46 126 -45 158 L-39 215 L-25 215 L-22 173 L-16 228 L-12 292 L-2 292 L0 236 L6 292 L17 292 L18 224 L24 173 L28 215 L40 215 L45 158 Q46 126 28 118Z" fill="#e5edf2" stroke="#6b8799" stroke-width="2"/>
+<path d="M0 70 L0 298" stroke="#13a89a" stroke-width="5" stroke-dasharray="8 6"/>
+<text x="0" y="322" font-size="12" fill="#08796f">Median / sagittal</text>
+</g>
+<g transform="translate(450 32)">
+<rect x="-120" y="0" width="240" height="340" rx="18" fill="#ffffff" stroke="#dbe7ee"/>
+<text x="0" y="32" font-size="19" font-weight="700" fill="#102d43">Frontal plane</text>
+<text x="0" y="55" font-size="13" fill="#536c7d">Anterior and posterior</text>
+<circle cx="0" cy="91" r="22" fill="#f0c9ad" stroke="#b98468" stroke-width="2"/>
+<path d="M-28 118 Q-46 126 -45 158 L-39 215 L-25 215 L-22 173 L-16 228 L-12 292 L-2 292 L0 236 L6 292 L17 292 L18 224 L24 173 L28 215 L40 215 L45 158 Q46 126 28 118Z" fill="#e5edf2" stroke="#6b8799" stroke-width="2"/>
+<path d="M-58 150 L58 150" stroke="#d97732" stroke-width="5" stroke-dasharray="8 6"/>
+<path d="M-48 148 L-58 150 L-48 152 M48 148 L58 150 L48 152" fill="none" stroke="#d97732" stroke-width="3"/>
+<text x="0" y="322" font-size="12" fill="#b85d1d">Coronal / frontal</text>
+</g>
+<g transform="translate(750 32)">
+<rect x="-120" y="0" width="240" height="340" rx="18" fill="#ffffff" stroke="#dbe7ee"/>
+<text x="0" y="32" font-size="19" font-weight="700" fill="#102d43">Transverse plane</text>
+<text x="0" y="55" font-size="13" fill="#536c7d">Superior and inferior</text>
+<circle cx="0" cy="91" r="22" fill="#f0c9ad" stroke="#b98468" stroke-width="2"/>
+<path d="M-28 118 Q-46 126 -45 158 L-39 215 L-25 215 L-22 173 L-16 228 L-12 292 L-2 292 L0 236 L6 292 L17 292 L18 224 L24 173 L28 215 L40 215 L45 158 Q46 126 28 118Z" fill="#e5edf2" stroke="#6b8799" stroke-width="2"/>
+<path d="M-44 182 Q0 172 44 182" stroke="#7b61c9" stroke-width="5" stroke-dasharray="8 6" fill="none"/>
+<text x="0" y="322" font-size="12" fill="#6550ac">Horizontal / axial</text>
+</g>
+<text x="450" y="400" font-size="13" fill="#536c7d">Schematic teaching illustration • Not to scale</text>
+</g></svg>
