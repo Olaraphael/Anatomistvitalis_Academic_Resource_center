@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v6";
+const CACHE_NAME = "anatomistvitalis-pwa-v7";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -12,6 +12,9 @@ const CORE_ASSETS = [
   "./diagrams/anatomical-planes.svg",
   "./diagrams/regional-anatomy-map.svg",
   "./diagrams/neuroanatomy-pathways.svg",
+  "./diagrams/brain-cortex-functional-landmarks.svg",
+  "./diagrams/brainstem-cranial-nerve-levels.svg",
+  "./visual-atlas/index.html",
   "./diagrams/embryology-timeline.svg",
   "./diagrams/neural-tube-development.svg",
   "./diagrams/germ-layer-derivatives.svg",
