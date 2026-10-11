@@ -6,6 +6,13 @@ These diagrams were created specifically for Anatomistvitalis Academic Resource 
 
 - `diagrams/cardiac-conduction.svg` — cardiac electrical conduction system.
 - `diagrams/nephron.svg` — nephron structure and filtrate pathway.
+- `diagrams/anatomical-planes.svg` — anatomical planes and orientation.
+- `diagrams/regional-anatomy-map.svg` — overview of body regions.
+- `diagrams/neuroanatomy-pathways.svg` — sensory and motor pathway crossing levels.
+- `diagrams/embryology-timeline.svg` — early developmental milestones by post-fertilisation week.
+- `diagrams/neural-tube-development.svg` — schematic stages of neurulation.
+- `diagrams/germ-layer-derivatives.svg` — representative ectoderm, mesoderm and endoderm derivatives.
+- `icons/icon-192.png` and `icons/icon-512.png` — original app icons prepared for installation; SVG icon variants are also supplied.
 
 The website attributes these diagrams to Anatomistvitalis Academic Resource Center. They are simplified teaching aids and are not intended for diagnosis or clinical decision-making.
 
@@ -17,7 +24,7 @@ Do not assume an image is free to reuse just because it appears in Google Images
 
 ## Third-party source register
 
-No third-party images are used in the original practical-study diagrams currently listed above. If a third-party asset is added later, list it here with complete attribution and licence information before publishing.
+No third-party images are used in the original diagrams currently listed above. If a third-party asset is added later, list it here with complete attribution and licence information before publishing.
 
 ## Text and scientific references
 
