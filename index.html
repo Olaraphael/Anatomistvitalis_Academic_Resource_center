@@ -390,7 +390,7 @@ function showRecallCard(){
   currentRecall={lesson,answer:points[Math.floor(Math.random()*points.length)]};
   $('recallMeta').textContent=lesson.system+' · '+lesson.level;
   $('recallTitle').textContent=lesson.title;
-  $('recallPrompt').textContent='Without opening the lesson, recall one important principle from this topic.;
+  $('recallPrompt').textContent='Without opening the lesson, recall one important principle from this topic.';
   $('recallAnswer').textContent=currentRecall.answer;
   $('recallAnswer').hidden=true;
 }
