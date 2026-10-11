@@ -26,6 +26,10 @@ Open the site in a supported browser such as Chrome or Edge and use the browser'
 4. If the menu item is absent, close other copies of the site, update Chrome, reopen the site, and try again later. An already-installed app may not show the install prompt again.
 5. After a site update, reload the website online. If an old version remains, close the app and reopen it.
 
+## If installation still does not appear
+
+The website is an installable web app, not a downloadable APK. A website button cannot force a browser to install it when the browser has not offered its native install prompt. On Android, use the live HTTPS website in Chrome, refresh it online, then open Chrome's **⋮** menu and choose **Install app** or **Add to Home screen** if shown. If that option is missing, try updating Chrome and reopening the site. Some Android browsers create only a home-screen shortcut rather than a full app installation.
+
 ## Offline limitations
 
 The app caches the main learning page and original diagrams after the first successful online visit. The lesson library, quiz and locally saved progress may work offline once cached, but an initial connection is needed, and not every browser/device handles offline storage identically. Progress is stored in that device's browser and does not sync to other devices.
