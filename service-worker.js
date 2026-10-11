@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v5";
+const CACHE_NAME = "anatomistvitalis-pwa-v6";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -15,25 +15,26 @@ const CORE_ASSETS = [
   "./diagrams/embryology-timeline.svg",
   "./diagrams/neural-tube-development.svg",
   "./diagrams/germ-layer-derivatives.svg",
-  "./memory-aids/",
-  "./topics/embryology-history-introduction/",
-  "./topics/gametogenesis-fertilisation/",
-  "./topics/week-one-cleavage-blastocyst/",
-  "./topics/week-two-implantation-bilaminar-disc/",
-  "./topics/week-three-gastrulation-notochord/",
-  "./topics/week-four-neurulation-folding/",
-  "./topics/weeks-five-eight-organogenesis/",
-  "./topics/fetal-period-placenta-circulation/",
-  "./topics/congenital-anomalies-teratology/",
-  "./topics/neuroanatomy-foundations/",
-  "./topics/brainstem-cranial-nerve-nuclei/",
-  "./topics/ascending-sensory-pathways-advanced/",
-  "./topics/descending-motor-pathways-advanced/",
-  "./topics/cerebellum-basal-ganglia/",
-  "./topics/limbic-system-memory/",
-  "./topics/ventricles-csf-hydrocephalus/",
-  "./topics/neurovascular-stroke-localisation/",
-  "./topics/spinal-cord-tract-lesion-localisation/"
+  "./memory-aids/index.html",
+  "./topics/index.htmlindex.html",
+  "./topics/embryology-history-introduction/index.html",
+  "./topics/gametogenesis-fertilisation/index.html",
+  "./topics/week-one-cleavage-blastocyst/index.html",
+  "./topics/week-two-implantation-bilaminar-disc/index.html",
+  "./topics/week-three-gastrulation-notochord/index.html",
+  "./topics/week-four-neurulation-folding/index.html",
+  "./topics/weeks-five-eight-organogenesis/index.html",
+  "./topics/fetal-period-placenta-circulation/index.html",
+  "./topics/congenital-anomalies-teratology/index.html",
+  "./topics/neuroanatomy-foundations/index.html",
+  "./topics/brainstem-cranial-nerve-nuclei/index.html",
+  "./topics/ascending-sensory-pathways-advanced/index.html",
+  "./topics/descending-motor-pathways-advanced/index.html",
+  "./topics/cerebellum-basal-ganglia/index.html",
+  "./topics/limbic-system-memory/index.html",
+  "./topics/ventricles-csf-hydrocephalus/index.html",
+  "./topics/neurovascular-stroke-localisation/index.html",
+  "./topics/spinal-cord-tract-lesion-localisation/index.html"
 ];
 
 self.addEventListener("install", event => {
@@ -68,7 +69,7 @@ self.addEventListener("fetch", event => {
           }
           return response;
         })
-        .catch(() => caches.match(request).then(cached => cached || (url.pathname.endsWith("/") ? caches.match("./index.html") : caches.match("./"))))
+        .catch(() => caches.match(request).then(cached => cached || caches.match(new URL("index.html", request.url).toString()).then(page => page || caches.match("./index.html"))))
     );
     return;
   }
