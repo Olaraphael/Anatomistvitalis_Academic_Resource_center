@@ -9,6 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="description" content="Study human anatomy, neuroanatomy, histology and physiology with structured lessons, clinical connections and free revision quizzes at Anatomistvitalis Academic Resource Center.">
+<meta name="author" content="Ibine Olaraphael">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://olaraphael.github.io/Anatomistvitalis_Academic_Resource_center/">
 <meta property="og:type" content="website">
@@ -389,7 +390,7 @@ function showRecallCard(){
   currentRecall={lesson,answer:points[Math.floor(Math.random()*points.length)]};
   $('recallMeta').textContent=lesson.system+' · '+lesson.level;
   $('recallTitle').textContent=lesson.title;
-  $('recallPrompt').textContent='In your own words, explain this key point: '+currentRecall.answer.split(/[.;]/)[0]+'.';
+  $('recallPrompt').textContent='Without opening the lesson, recall one important principle from this topic.;
   $('recallAnswer').textContent=currentRecall.answer;
   $('recallAnswer').hidden=true;
 }
