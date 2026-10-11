@@ -1,6 +1,6 @@
 # Install the Anatomistvitalis app
 
-Anatomistvitalis is published as an installable Progressive Web App (PWA). It uses the website's existing content and can be added to a supported phone or computer's home screen/app launcher. It is not an Android APK or an App Store package.
+Anatomistvitalis is published as an installable Progressive Web App (PWA). It uses the website's existing content and can be added to a supported phone or computer's home screen/app launcher. It is not an Android APK or an App Store package. Installation support depends on the browser and device.
 
 ## Android (Chrome)
 
@@ -17,6 +17,14 @@ Anatomistvitalis is published as an installable Progressive Web App (PWA). It us
 ## Computer
 
 Open the site in a supported browser such as Chrome or Edge and use the browser's install icon or menu option when available.
+
+## If the Install button does not open a prompt
+
+1. Confirm that you opened the live HTTPS address above, not a GitHub file preview or a downloaded HTML file.
+2. Open the site in **Google Chrome on Android**, reconnect to the internet, and reload the page.
+3. Open Chrome's three-dot menu. If available, choose **Install app** or **Add to Home screen**. The in-page button can only open the native prompt after Chrome has decided the site is installable; browsers do not expose that prompt in every situation.
+4. If the menu item is absent, close other copies of the site, update Chrome, reopen the site, and try again later. An already-installed app may not show the install prompt again.
+5. After a site update, reload the website online. If an old version remains, close the app and reopen it.
 
 ## Offline limitations
 
