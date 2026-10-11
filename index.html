@@ -62,19 +62,29 @@ async function installApp() {
     return;
   }
   if (deferredInstallPrompt) {
-    deferredInstallPrompt.prompt();
-    const result = await deferredInstallPrompt.userChoice;
-    setStatus(result && result.outcome === 'accepted'
-      ? 'Installation accepted. Look for Anatomistvitalis in your apps.'
-      : 'Installation was not completed. You can try again from the browser menu.');
-    deferredInstallPrompt = null;
+    try {
+      const promptEvent = deferredInstallPrompt;
+      deferredInstallPrompt = null;
+      await promptEvent.prompt();
+      const result = await promptEvent.userChoice;
+      setStatus(result && result.outcome === 'accepted'
+        ? 'Installation accepted. Look for Anatomistvitalis in your apps.'
+        : 'Installation was cancelled. You can try again from the browser menu.');
+    } catch (error) {
+      console.warn('The browser could not open its install prompt:', error);
+      setStatus('The browser did not open the install prompt. Open this site in Chrome, then use ⋮ > Install app or Add to Home screen.');
+    }
     return;
   }
-  const isAppleMobile = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  const ua = navigator.userAgent || '';
+  const isAppleMobile = /iphone|ipad|ipod/i.test(ua);
+  const isAndroid = /android/i.test(ua);
   if (isAppleMobile) {
-    setStatus('To install on iPhone/iPad: open this page in Safari, tap Share, then choose “Add to Home Screen”.');
+    setStatus('On iPhone/iPad: open this page in Safari, tap Share, then choose “Add to Home Screen”.');
+  } else if (isAndroid) {
+    setStatus('On Android: open this exact HTTPS website in Chrome, refresh it while online, then tap ⋮ > “Install app” or “Add to Home screen”. If the option is absent, Chrome has not yet recognised the site as installable.');
   } else {
-    setStatus('If your browser supports installation, open its menu (⋮) and choose “Install app” or “Add to Home screen”. The option may appear after you visit the site online.');
+    setStatus('Open this HTTPS site in Chrome or Edge and use the browser menu or address-bar install icon. Installation is not offered by every browser.');
   }
 }
 if ('serviceWorker' in navigator && location.protocol === 'https:') {
@@ -155,6 +165,16 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 .practicalTags span{font-size:11px;border-radius:99px;padding:5px 9px;background:var(--pale);color:#075f59;font-weight:750}
 @media(max-width:700px){.practicalGrid{grid-template-columns:1fr}.practicalCard .diagram{min-height:180px}}
 
+
+/* Founder profile and active-recall study tool */
+.ownerSection{padding:44px 0 30px}
+.ownerPanel{display:grid;grid-template-columns:minmax(220px,.72fr) 1.5fr;gap:28px;align-items:center;background:linear-gradient(135deg,#0a2034,#17445a);color:#fff;padding:clamp(22px,4vw,38px);border-radius:24px;box-shadow:0 18px 48px #0a20341c}
+.ownerVisual{min-height:230px;border:1px solid #ffffff25;border-radius:18px;background:radial-gradient(circle at 50% 35%,#2c7180 0,#153e53 48%,#0b263a 100%);display:grid;place-items:center;overflow:hidden}
+.ownerVisual svg{width:min(100%,280px);height:auto}
+.ownerCopy .kicker{color:#65e0d0}.ownerCopy h2{font-size:clamp(25px,3vw,36px);line-height:1.15;margin:8px 0 10px}.ownerCopy p{color:#d4e4ec}.ownerRole{font-weight:750;color:#8ce7dc!important;margin:0 0 14px}.ownerActions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.ownerActions a{display:inline-flex;padding:10px 14px;border-radius:10px;border:1px solid #ffffff55;font-weight:700;font-size:13px}.ownerActions a:first-child{background:#18b8a6;color:#062b35;border-color:#18b8a6}
+.recallSection{padding:34px 0}.recallCard{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;padding:24px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}.recallCard h3{margin:5px 0 8px}.recallPrompt{font-weight:650;color:#173c51}.recallAnswer{padding:13px 15px;border-left:3px solid var(--teal);background:#effaf8;border-radius:0 10px 10px 0;margin-top:12px}.recallAnswer[hidden]{display:none}.recallActions{display:flex;gap:9px;flex-wrap:wrap}.recallActions button{border:0;border-radius:10px;padding:11px 14px;font-weight:750}.recallActions .reveal{background:#e4f6f3;color:#075b55}.recallActions .next{background:#0a2034;color:#fff}
+@media(max-width:700px){.ownerPanel{grid-template-columns:1fr}.ownerVisual{min-height:180px}.recallCard{grid-template-columns:1fr}.recallActions button{flex:1}}
+
 </style>
 </head>
 <body>
@@ -189,12 +209,17 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
 <div class="practicalGrid">
 <article class="practicalCard"><div class="diagram"><img src="diagrams/cardiac-conduction.svg" width="520" height="360" loading="lazy" alt="Original schematic of the heart's electrical conduction system, showing the sinoatrial node, atrioventricular node, bundle of His, right and left bundle branches, and Purkinje fibres."></div><div class="practicalContent"><div class="kicker">Cardiovascular physiology</div><h3>Heart conduction pathway</h3><p>Trace the normal electrical impulse through the conducting system and connect it to coordinated atrial and ventricular contraction.</p><div class="practicalTags"><span>Physiology</span><span>ECG foundations</span><span>Clinical correlation</span></div><details><summary>Self-test: name the sequence</summary><p><strong>Answer:</strong> Sinoatrial (SA) node → atrial myocardium → atrioventricular (AV) node (physiological delay) → atrioventricular bundle (bundle of His) → right and left bundle branches → Purkinje fibres → ventricular myocardium.</p><p><strong>Clinical link:</strong> Conduction blocks can alter the timing or route of ventricular activation and may change the ECG.</p></details><p class="attribution">Artwork: Anatomistvitalis Academic Resource Center, original SVG created for this site (2026). No third-party image used.</p></div></article>
 <article class="practicalCard"><div class="diagram"><img src="diagrams/nephron.svg" width="520" height="360" loading="lazy" alt="Original schematic nephron showing the glomerulus and glomerular capsule, proximal convoluted tubule, loop of Henle, distal convoluted tubule, collecting duct, and direction of filtrate flow."></div><div class="practicalContent"><div class="kicker">Renal anatomy &amp; physiology</div><h3>Nephron: the functional unit of the kidney</h3><p>Follow filtrate from the renal corpuscle through the tubules, then relate each segment to filtration, reabsorption, secretion and urine concentration.</p><div class="practicalTags"><span>Histology</span><span>Renal physiology</span><span>Fluid balance</span></div><details><summary>Self-test: where does filtration begin?</summary><p><strong>Answer:</strong> Filtration occurs across the glomerular filtration barrier from glomerular capillaries into Bowman's (glomerular) space. The filtrate then enters the proximal convoluted tubule.</p><p><strong>Clinical link:</strong> Damage to the filtration barrier may allow abnormal amounts of protein or blood cells to appear in urine; interpretation requires appropriate clinical testing.</p></details><p class="attribution">Artwork: Anatomistvitalis Academic Resource Center, original SVG created for this site (2026). No third-party image used.</p></div></article>
+<article class="practicalCard"><div class="diagram"><img src="diagrams/anatomical-planes.svg" width="520" height="360" loading="lazy" alt="Original schematic teaching diagram comparing sagittal, frontal and transverse anatomical planes."></div><div class="practicalContent"><div class="kicker">Anatomical orientation</div><h3>The three principal anatomical planes</h3><p>Use the sagittal, frontal (coronal) and transverse (horizontal/axial) planes to describe sections, movements and the orientation of structures in anatomy and medical imaging.</p><div class="practicalTags"><span>Foundations</span><span>Imaging</span><span>Spatial orientation</span></div><details><summary>Self-test: which plane separates anterior from posterior?</summary><p><strong>Answer:</strong> The frontal (coronal) plane separates anterior (front) from posterior (back) portions. The sagittal plane separates left and right portions; the transverse plane separates superior and inferior portions.</p><p><strong>Clinical link:</strong> CT and MRI images are commonly viewed in axial/transverse, coronal and sagittal planes, so plane recognition is essential for describing a lesion's location.</p></details><p class="attribution">Artwork: Anatomistvitalis Academic Resource Center, original SVG created for this site (2026). Schematic and not to scale.</p></div></article>
 </div>
 <div class="notice" style="margin-top:20px"><strong>Image and attribution policy:</strong> Original diagrams in this lab are authored for this resource centre. Any future third-party media should only be included after checking reuse rights, recording creator and source, and displaying the attribution and licence required by the creator.</div>
 </div></section>
 
+<section class="recallSection" id="recall"><div class="wrap"><div class="head"><div><div class="kicker">Daily study tool</div><h2>Rapid recall challenge.</h2></div><p>Practise retrieval in short bursts. Reveal the key point, then move to another concept. For deeper understanding, open the linked lesson in the library.</p></div><div class="recallCard"><div><div class="kicker" id="recallMeta">Ready when you are</div><h3 id="recallTitle">Turn recognition into recall.</h3><p class="recallPrompt" id="recallPrompt">Tap “Start a challenge” to get a question drawn from the lesson library.</p><div class="recallAnswer" id="recallAnswer" hidden></div></div><div class="recallActions"><button class="next" type="button" onclick="showRecallCard()">Start a challenge ↗</button><button class="reveal" type="button" onclick="revealRecallAnswer()">Reveal answer</button></div></div></div></section>
 <section id="practice"><div class="wrap"><div class="head"><div><div class="kicker">Active recall</div><h2>Check what you know.</h2></div><p>Answer each question, read the explanation and use the feedback to guide your next revision session.</p></div><div class="studyGrid"><div class="panel"><h3>Your study progress</h3><p>Completed lessons are saved in this browser on this device. Clearing browser data or changing devices may remove or reset this local progress.</p><div class="progressBar"><span id="progressFill"></span></div><strong id="progressLabel">0 lessons completed</strong><p id="progressTip">Open a lesson and mark it complete to start tracking your learning.</p><button class="btn light" onclick="resetProgress()">Reset local progress</button></div><div class="panel"><div class="kicker">Quick knowledge check</div><div id="quizArea"></div></div></div></div></section>
-<section id="about" style="padding-top:20px"><div class="wrap"><div class="notice"><strong>Educational notice:</strong> This resource is intended for academic learning and revision. It is not a substitute for prescribed curricula, current clinical guidelines, qualified instruction or professional medical advice. Clinical examples are for learning, not personal diagnosis or treatment.</div></div></section>
+<section class="ownerSection" id="about"><div class="wrap"><div class="ownerPanel">
+<div class="ownerVisual" aria-label="Original anatomical illustration representing the founder's academic focus"><svg viewBox="0 0 280 260" role="img" aria-labelledby="founderArtTitle"><title id="founderArtTitle">Anatomistvitalis anatomical heart and learning symbol</title><defs><linearGradient id="founderHeart" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff9c94"/><stop offset="1" stop-color="#c63e5b"/></linearGradient></defs><circle cx="140" cy="130" r="104" fill="none" stroke="#72d8d0" stroke-opacity=".28" stroke-width="1.5"/><circle cx="140" cy="130" r="80" fill="none" stroke="#72d8d0" stroke-opacity=".18" stroke-width="1.5" stroke-dasharray="4 7"/><path d="M140 97 C121 62 82 71 79 104 C75 136 112 166 140 191 C168 166 205 136 201 104 C197 71 159 62 140 97Z" fill="url(#founderHeart)" stroke="#ffd2c8" stroke-width="3"/><path d="M124 86 C115 63 126 46 141 50 C157 53 159 69 150 90 M158 86 C176 62 193 73 186 96" fill="none" stroke="#f5a4a0" stroke-width="13" stroke-linecap="round"/><path d="M140 103 C130 119 147 127 136 142 C126 157 140 168 140 178" fill="none" stroke="#ffe7dd" stroke-width="3" stroke-linecap="round"/><text x="140" y="232" text-anchor="middle" fill="#b7f4ec" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">ANATOMY • SCIENCE • LEARNING</text></svg></div>
+<div class="ownerCopy"><div class="kicker">Meet the founder</div><h2>Built with purpose by Ibine Olaraphael.</h2><p class="ownerRole">Founder &amp; Academic Curator · Researcher and Anatomist</p><p>Anatomistvitalis Academic Resource Center was created to make anatomy, physiology and biomedical learning more structured, visual and approachable—from first principles to university-level revision and clinical connections.</p><p>The mission is to help learners understand not only <em>what</em> a structure is, but where it is found, how it works, how it relates to other structures and why that knowledge matters in practice. The learning library will continue to grow through careful explanations, original teaching diagrams, self-assessment and responsible academic sourcing.</p><div class="ownerActions"><a href="mailto:ibineolaraphael@gmail.com">Contact the founder</a><a href="https://youtube.com/@anatomistvitalis?si=1t326DKYZ1DBYTFw" target="_blank" rel="noopener noreferrer">Watch learning videos ↗</a></div></div>
+</div><div class="notice" style="margin-top:20px"><strong>Educational notice:</strong> This resource is intended for academic learning and revision. It is not a substitute for prescribed curricula, current clinical guidelines, qualified instruction or professional medical advice. Clinical examples are for learning, not personal diagnosis or treatment.</div></div></section>
 </main>
 
 <section class="socialHub" id="social"><div class="wrap"><div class="head"><div><div class="kicker">Stay connected</div><h2>Learn with Anatomistvitalis.</h2></div><p>Follow Anatomistvitalis for anatomy explainers, video lessons, revision prompts and updates from the Academic Resource Center.</p></div><div class="socialGrid">
@@ -355,6 +380,23 @@ let completed = new Set(JSON.parse(localStorage.getItem('av-completed')||'[]'));
 let currentLesson = null, qIndex = 0, score = 0, answered = false;
 const $=id=>document.getElementById(id);
 const learningOrder=["anatomy-history","anatomical-language","planes-axes-sections","directional-terms-regions","body-divisions-cavities","abdominal-regions-lines","anatomical-movements","levels-of-organisation","anatomical-nomenclature","gross-anatomy-methods","skeletal-system-overview","bone-classification-landmarks","joints-classification","synovial-joints-regional","vertebral-column-anatomy","skeletal-muscle-anatomy","bone-remodelling-fracture-healing","thorax-abdomen-regional","abdominal-wall-anatomy","hand-anatomy","foot-ankle-anatomy","radiological-anatomy","research-methods-anatomy","histology-introduction","cell-organelle","four-tissue-classes","epithelial-classification","connective-tissue","cartilage-and-connective-tissue-histology","renal-nephron-microscopy","lung-histology-gas-barrier","muscle-histology","embryology-principles","germ-layers-organogenesis","nervous-system-map","spinal-cord","sensory-motor-pathways","general-physiology-homeostasis","cardiovascular-physiology","cardiac-electrical-conduction","cardiac-output-vascular-resistance","respiratory-physiology","respiratory-ventilation-perfusion","respiratory-mechanics","renal-physiology","renal-filtration-clearance","endocrine-physiology","endocrine-axis-thyroid-adrenal","digestive-physiology","digestion-absorption-physiology","blood-immunity","blood-components","haemostasis-coagulation","biochemistry-molecular","homeostasis","cell","bone","head","skull","cranial","meninges","brain","cerebral-blood-supply","cardiac","neuron","epithelium","shoulder","integumentary-system","upper-limb-regional-anatomy","lower-limb-regional-anatomy","head-neck-regional-anatomy","pelvis-perineum-anatomy","thoracic-organs-anatomy","cardiovascular-gross-anatomy","respiratory-gross-anatomy","digestive-gross-anatomy","urinary-gross-anatomy","reproductive-anatomy","endocrine-glands-anatomy","lymphatic-system-anatomy","special-senses-anatomy","autonomic-physiology","muscle-physiology","acid-base-fluid-balance","metabolism-energy","reproductive-physiology","pregnancy-development","immunology-intro","genetics-molecular-medicine","clinical-anatomy-approach","research-literacy-biomed"];
+let currentRecall = null;
+function showRecallCard(){
+  if(!Array.isArray(lessons)||!lessons.length)return;
+  const lesson=lessons[Math.floor(Math.random()*lessons.length)];
+  const points=(lesson.points||[]).filter(Boolean);
+  if(!points.length)return;
+  currentRecall={lesson,answer:points[Math.floor(Math.random()*points.length)]};
+  $('recallMeta').textContent=lesson.system+' · '+lesson.level;
+  $('recallTitle').textContent=lesson.title;
+  $('recallPrompt').textContent='In your own words, explain this key point: '+currentRecall.answer.split(/[.;]/)[0]+'.';
+  $('recallAnswer').textContent=currentRecall.answer;
+  $('recallAnswer').hidden=true;
+}
+function revealRecallAnswer(){
+  if(!currentRecall){showRecallCard();if(!currentRecall)return;}
+  $('recallAnswer').hidden=false;
+}
 function systemMatches(system,filter){if(filter==='Physiology')return system.toLowerCase().includes('physiology');if(filter==='Histology & Cell Biology')return ['Histology & Cell Biology','General Histology'].includes(system);if(filter==='Gross Anatomy')return ['Gross Anatomy','Anatomy Foundations','Neuroanatomy','Clinical Anatomy','Regional Anatomy','Musculoskeletal Anatomy','Skeletal Anatomy'].includes(system);return system===filter}
 function renderLessons(){const q=$('search').value.trim().toLowerCase(), f=$('filter').value;const found=lessons.filter(l=>(!f||systemMatches(l.system,f))&&(!q||(l.title+' '+l.system+' '+l.body+' '+l.points.join(' ')).toLowerCase().includes(q))).sort((a,b)=>{const ai=learningOrder.indexOf(a.id),bi=learningOrder.indexOf(b.id);return (ai<0?999:ai)-(bi<0?999:bi)});$('lessonGrid').innerHTML=found.length?found.map(l=>'<article class="lesson"><div class="meta">'+l.icon+' &nbsp; '+l.system+'</div><h3>'+l.title+'</h3><p>'+l.body.slice(0,138)+'…</p><div class="lessonFoot"><span>'+l.time+' min · '+l.level+(completed.has(l.id)?' · ✓ Completed':'')+'</span><button onclick="openLesson(\''+l.id+'\')">Study lesson →</button></div></article>').join(''):'<div class="empty">No lessons found. Try a broader search such as “head”, “bone”, or “physiology”.</div>'}
 function filterSystem(s){$('filter').value=s;$('search').value='';renderLessons();$('library').scrollIntoView({behavior:'smooth'})}
