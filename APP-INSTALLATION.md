@@ -1,4 +1,5 @@
-# Install the Anatomistvitalis app
+# Installing Anatomistvitalis Academic Resource Center
+
 
 Anatomistvitalis is published as an installable Progressive Web App (PWA). It uses the website's existing content and can be added to a supported phone or computer's home screen/app launcher. It is not an Android APK or an App Store package. Installation support depends on the browser and device.
 
@@ -41,3 +42,14 @@ When the site is updated, reconnect to the internet and reopen the app so the br
 ## Privacy
 
 This version does not create student accounts or sync data to a server. Quiz interactions run in the browser, and lesson-completion data is stored locally on the user's device.
+
+
+## Installation troubleshooting (updated October 2026)
+
+The site has a web app manifest, HTTPS hosting, a service worker, and PNG plus SVG app icons. These are key parts of a Progressive Web App, but the final install prompt is controlled by the browser and device; no website can force it to appear in every browser.
+
+**Android / Chrome:** open the HTTPS homepage in the full Google Chrome app (not a social-media in-app browser), load it while online, then use Chrome ⋮ → **Install app** or **Add to Home screen**. If neither appears, refresh the page, allow a little time for the service worker to activate, and check Chrome's site settings and storage. If an older version was installed, remove the old shortcut/app and reload the website.
+
+**If the install prompt is still missing:** open the site on desktop Chrome, use DevTools → Application → Manifest and Service Workers to inspect manifest errors and service-worker registration. A valid manifest and working icon URLs are required, and HTTPS alone does not guarantee installability. Installation can also vary by browser, device policy, and whether the app is already installed.
+
+**Offline behaviour:** previously visited pages may be cached. First load the site online so its core files can be cached; do not rely on the site for emergency or clinical decisions.

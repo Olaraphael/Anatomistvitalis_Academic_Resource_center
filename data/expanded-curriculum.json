@@ -1,0 +1,416 @@
+[
+  {
+    "id": "embryology-history-introduction",
+    "icon": "📚",
+    "title": "Introduction to embryology: history, scope and key concepts",
+    "system": "Embryology",
+    "level": "Beginner",
+    "time": 18,
+    "body": "Embryology studies development from gamete formation and fertilisation through embryonic and fetal life. Modern developmental biology combines anatomy, microscopy, genetics, cell signalling and imaging. Historical milestones include Aristotle’s observations, Malpighi’s use of microscopy, Wolff’s arguments for epigenesis, von Baer’s comparative embryology, and later embryo collections and staging systems. No single person founded the whole discipline. The embryonic period is conventionally the first eight weeks after fertilisation; the fetal period begins in the ninth post-fertilisation week and emphasises growth and maturation. Gestational age calculated from the last menstrual period is usually about two weeks greater than post-fertilisation age.",
+    "objectives": [
+      "Define embryology and developmental biology.",
+      "Outline selected historical milestones.",
+      "Distinguish post-fertilisation age from gestational age."
+    ],
+    "points": [
+      "Development involves proliferation, migration, differentiation, tissue shaping and programmed cell death.",
+      "Carnegie stages classify early embryos by morphological features, not age alone.",
+      "The first eight post-fertilisation weeks establish the basic plan of most organ systems.",
+      "Gestational age is usually approximately two weeks ahead of post-fertilisation age."
+    ],
+    "clinical": "Embryology supports interpretation of prenatal imaging and understanding congenital conditions. A timeline describes typical development, not an individual diagnosis.",
+    "memoryAid": "P-M-D-A = Proliferation, Migration, Differentiation, Apoptosis. Timeline cue: 1 divide, 2 two layers, 3 three layers, 4 fold and close, 5–8 build organ plans.",
+    "image": "./diagrams/embryology-timeline.svg"
+  },
+  {
+    "id": "gametogenesis-fertilisation",
+    "icon": "🧬",
+    "title": "Gametogenesis, meiosis and fertilisation",
+    "system": "Embryology",
+    "level": "Beginner",
+    "time": 20,
+    "body": "Gametogenesis produces haploid sperm and oocytes. Meiosis reduces chromosome number and generates genetic variation through crossing-over and independent assortment. In oogenesis, primary oocytes begin meiosis before birth and pause in prophase I; meiosis II is completed only if fertilisation occurs. Fertilisation usually takes place in the ampulla of the uterine tube. Sperm capacitation and the acrosome reaction help sperm cross the oocyte coverings; membrane fusion activates the oocyte, helps prevent polyspermy and permits formation of a diploid zygote.",
+    "objectives": [
+      "Explain meiosis and genetic variation.",
+      "Compare spermatogenesis with oogenesis.",
+      "Summarise the major events of fertilisation."
+    ],
+    "points": [
+      "Human gametes usually contain 23 chromosomes; the zygote usually contains 46.",
+      "Meiosis I separates homologous chromosomes; meiosis II separates sister chromatids.",
+      "The cortical reaction helps reduce the chance of polyspermy.",
+      "Cleavage begins after the zygote forms."
+    ],
+    "clinical": "Chromosome segregation errors can lead to aneuploidy or pregnancy loss. Fertility concerns require individual clinical assessment.",
+    "memoryAid": "Meiosis: “I = pairs, II = sisters.” Fertilisation: Capacitation → Penetration → Fusion → Oocyte activation → Pronuclei → Zygote.",
+    "image": "./diagrams/embryology-timeline.svg"
+  },
+  {
+    "id": "week-one-cleavage-blastocyst",
+    "icon": "🫧",
+    "title": "Week 1: cleavage, morula and blastocyst",
+    "system": "Embryology",
+    "level": "Beginner",
+    "time": 16,
+    "body": "After fertilisation, cleavage produces repeated mitotic divisions without a proportional increase in the overall size of the conceptus. Blastomeres compact to form a morula; fluid then creates a blastocyst cavity. The blastocyst contains an inner cell mass (embryoblast), which forms the embryo proper, and an outer trophoblast, which contributes to fetal components of the placenta. The blastocyst sheds the zona pellucida before implantation begins, usually around days 6–7 after fertilisation.",
+    "objectives": [
+      "Describe cleavage and compaction.",
+      "Distinguish morula from blastocyst.",
+      "Identify embryoblast and trophoblast."
+    ],
+    "points": [
+      "Cleavage partitions the original cytoplasm into smaller blastomeres.",
+      "Compaction occurs around the 8-cell stage.",
+      "The blastocyst contains a cavity, embryoblast and trophoblast.",
+      "Hatching from the zona pellucida allows implantation to begin."
+    ],
+    "clinical": "Abnormal cleavage or implantation may contribute to early pregnancy loss; embryo grading does not guarantee a pregnancy outcome.",
+    "memoryAid": "Week 1: “Divide → Compact → Cavitate → Hatch.” Morula = solid ball; blastocyst = fluid-filled cavity with inner cell mass.",
+    "image": "./diagrams/embryology-timeline.svg"
+  },
+  {
+    "id": "week-two-implantation-bilaminar-disc",
+    "icon": "🌱",
+    "title": "Week 2: implantation and the bilaminar embryonic disc",
+    "system": "Embryology",
+    "level": "Beginner",
+    "time": 18,
+    "body": "Implantation progresses as trophoblast differentiates into cytotrophoblast and syncytiotrophoblast. The syncytiotrophoblast invades the endometrium and contributes to early maternal-fetal exchange. The embryoblast forms a bilaminar disc of epiblast and hypoblast. The amniotic cavity develops adjacent to the epiblast, while the yolk sac develops in relation to the hypoblast. Extraembryonic mesoderm and the chorionic cavity help organise the early embryo and its supporting tissues.",
+    "objectives": [
+      "Describe trophoblast differentiation.",
+      "Identify epiblast, hypoblast, amniotic cavity and yolk sac.",
+      "Explain why week 2 is called the bilaminar-disc stage."
+    ],
+    "points": [
+      "Cytotrophoblast is the inner cellular layer; syncytiotrophoblast is the outer invasive layer.",
+      "Epiblast gives rise to all three definitive germ layers during gastrulation.",
+      "Hypoblast contributes to extraembryonic lining rather than the definitive germ layers of the embryo proper.",
+      "Implantation is a coordinated interaction with receptive endometrium."
+    ],
+    "clinical": "Ectopic implantation can be dangerous. Pain or bleeding in early pregnancy requires appropriate clinical assessment.",
+    "memoryAid": "Week 2 = “Two layers, two spaces”: epiblast + hypoblast; amniotic cavity + yolk sac. Trophoblast: cyto + syncytio.",
+    "image": "./diagrams/embryology-timeline.svg"
+  },
+  {
+    "id": "week-three-gastrulation-notochord",
+    "icon": "🔻",
+    "title": "Week 3: gastrulation, germ layers and notochord",
+    "system": "Embryology",
+    "level": "Intermediate",
+    "time": 22,
+    "body": "Gastrulation transforms the bilaminar disc into a trilaminar disc. Epiblast cells migrate through the primitive streak: early cells replace hypoblast to form definitive endoderm, later cells spread between layers to form mesoderm, and remaining epiblast becomes ectoderm. The notochordal process establishes the midline and signals the overlying ectoderm to form neural tissue. The primitive streak also helps establish cranio-caudal and left-right organisation. Early neurulation and somite formation begin during this period.",
+    "objectives": [
+      "Explain how gastrulation produces three germ layers.",
+      "Describe the primitive streak and notochord.",
+      "Connect germ layers to representative tissue derivatives."
+    ],
+    "points": [
+      "Ectoderm forms epidermis and nervous tissue; mesoderm forms much muscle, connective tissue, bone, cardiovascular and urogenital tissue; endoderm forms epithelial linings of many internal systems.",
+      "The notochord patterns the axial skeleton and signals neural development.",
+      "Most of the notochord regresses; remnants contribute to the nucleus pulposus.",
+      "Early patterning errors can affect multiple organ systems."
+    ],
+    "clinical": "Early signalling errors can have broad effects. Germ-layer associations are learning anchors, not a complete prediction of every organ’s origin.",
+    "memoryAid": "E-M-E: Ectoderm outside, Mesoderm middle, Endoderm inside. “Skin and signals; movement and middle structures; gut-tube lining.”",
+    "image": "./diagrams/germ-layer-derivatives.svg"
+  },
+  {
+    "id": "week-four-neurulation-folding",
+    "icon": "🧠",
+    "title": "Week 4: neurulation, body folding and neural tube closure",
+    "system": "Embryology",
+    "level": "Intermediate",
+    "time": 22,
+    "body": "Signals from the notochord and nearby mesoderm induce ectoderm to form the neural plate. The plate bends into a neural groove; neural folds approach and fuse to form the neural tube. Cranial and caudal neuropores close during the fourth post-fertilisation week. Neural crest cells detach from the folds and migrate to form many peripheral nervous system structures and other derivatives. Cranio-caudal and lateral folding reshape the flat disc, incorporate endoderm into the primitive gut tube and reposition developing structures.",
+    "objectives": [
+      "Trace neural plate, groove, folds and tube.",
+      "Explain the role of neural crest cells.",
+      "Describe body folding and primitive gut formation."
+    ],
+    "points": [
+      "Neural tube forms the brain and spinal cord.",
+      "Neural crest contributes to sensory and autonomic ganglia, Schwann cells, melanocytes and several craniofacial tissues.",
+      "Neural tube closure occurs progressively along the body axis.",
+      "Folding converts the flat embryonic disc into a more cylindrical body form."
+    ],
+    "clinical": "Failure of neural tube closure can cause neural tube defects. Periconceptional folate reduces risk but does not prevent every case; follow qualified local clinical guidance.",
+    "memoryAid": "Neurulation: “Plate → Groove → Folds → Tube.” Neural crest = travelling edge cells that migrate widely.",
+    "image": "./diagrams/neural-tube-development.svg"
+  },
+  {
+    "id": "weeks-five-eight-organogenesis",
+    "icon": "🫀",
+    "title": "Weeks 5–8: organogenesis and external form",
+    "system": "Embryology",
+    "level": "Intermediate",
+    "time": 20,
+    "body": "Weeks 5–8 after fertilisation are a period of rapid organogenesis and shaping. The brain expands and flexes, facial prominences grow and fuse, limb buds develop into recognisable segments, and the heart, gut, kidneys and other organs undergo major structural changes. Pharyngeal arches contribute to head and neck structures; limb rotation establishes adult-like orientation; the midgut temporarily herniates into the umbilical cord before returning to the abdominal cavity. By the end of week 8, the basic plan of most major organ systems is established, although growth and maturation continue throughout fetal life.",
+    "objectives": [
+      "Identify major patterns of organogenesis.",
+      "Explain stage-dependent vulnerability to teratogens.",
+      "Distinguish organ formation from later maturation."
+    ],
+    "points": [
+      "The embryonic period is a major window for many structural malformations.",
+      "Limb buds undergo elongation, segmentation and rotation.",
+      "The primitive gut develops foregut, midgut and hindgut regions.",
+      "The “all-or-none” rule for very early exposure is simplified and not a guarantee for an individual pregnancy."
+    ],
+    "clinical": "Effects of medicines, infections, alcohol and other exposures depend on timing, dose and context. Seek personalised advice for a possible pregnancy exposure.",
+    "memoryAid": "1 divide; 2 two layers; 3 three layers; 4 fold and close; 5–8 build organ plans.",
+    "image": "./diagrams/embryology-timeline.svg"
+  },
+  {
+    "id": "fetal-period-placenta-circulation",
+    "icon": "🩸",
+    "title": "Fetal period, placenta and fetal circulation",
+    "system": "Embryology",
+    "level": "Intermediate",
+    "time": 22,
+    "body": "The fetal period begins in the ninth post-fertilisation week and is characterised mainly by growth and maturation. The placenta is a fetomaternal organ: fetal chorionic tissues and maternal decidua cooperate in exchange of gases, nutrients and waste and in endocrine signalling. Maternal and fetal blood normally remain in separate circulations. Fetal circulation uses the umbilical vein, ductus venosus, foramen ovale, ductus arteriosus and umbilical arteries to direct oxygen-rich blood and bypass the non-ventilated lungs. At birth, lung expansion and changes in vascular resistance initiate major circulatory transitions.",
+    "objectives": [
+      "Distinguish embryonic development from fetal growth.",
+      "Describe the placenta’s exchange and endocrine roles.",
+      "Trace the major fetal circulatory shunts."
+    ],
+    "points": [
+      "Umbilical vein carries relatively oxygen-rich blood toward the fetus; two umbilical arteries return blood toward the placenta.",
+      "Ductus venosus partly bypasses the liver; foramen ovale shunts between atria; ductus arteriosus connects pulmonary trunk to aorta.",
+      "After birth, pressure and oxygen changes promote functional closure of shunts.",
+      "Placental transfer depends on molecule properties, transport mechanisms and placental function."
+    ],
+    "clinical": "Placental disorders and fetal growth restriction require obstetric assessment. Developmental diagrams do not predict individual outcomes.",
+    "memoryAid": "D-F-D: Ductus venosus (liver bypass), Foramen ovale (atria), Ductus arteriosus (pulmonary artery to aorta). Umbilical vein goes to fetus; arteries go to placenta.",
+    "image": "./diagrams/embryology-timeline.svg"
+  },
+  {
+    "id": "congenital-anomalies-teratology",
+    "icon": "🧩",
+    "title": "Congenital anomalies, teratology and developmental mechanisms",
+    "system": "Embryology",
+    "level": "Advanced",
+    "time": 24,
+    "body": "Congenital anomalies may have genetic, chromosomal, environmental, multifactorial or unknown causes. Teratology studies how exposures and biological factors disturb development. Effects depend on timing, dose, duration, route, maternal-fetal factors and the process underway. Malformations arise from intrinsically abnormal formation; disruptions damage previously normal tissue; deformations result from mechanical forces; dysplasias reflect abnormal organisation of cells within a tissue. Conditions may be isolated or form a syndrome, sequence or association. Assessment can include imaging, family history, genetic testing and multidisciplinary counselling.",
+    "objectives": [
+      "Distinguish malformation, disruption, deformation and dysplasia.",
+      "Explain stage-dependent vulnerability.",
+      "Communicate risk without making unsupported individual predictions."
+    ],
+    "points": [
+      "Many structural malformations arise during organogenesis, while some tissues remain vulnerable later for growth or functional effects.",
+      "Not every congenital anomaly has an identifiable cause.",
+      "A syndrome is a recognisable pattern with a common cause; a sequence is a cascade from one primary event; an association is a non-random cluster whose cause may be uncertain.",
+      "Population-level risk does not determine an individual outcome."
+    ],
+    "clinical": "Avoid attributing congenital differences to an exposure without evidence. Suspected exposure or diagnosis calls for qualified obstetric, paediatric or genetic counselling.",
+    "memoryAid": "M-D-D-D: Malformation = made wrong; Disruption = damage after formation; Deformation = force changes shape; Dysplasia = disordered tissue organisation.",
+    "image": "./diagrams/germ-layer-derivatives.svg"
+  },
+  {
+    "id": "neuroanatomy-foundations",
+    "icon": "🧠",
+    "title": "Neuroanatomy foundations: organisation, planes and terminology",
+    "system": "Neuroanatomy",
+    "level": "Beginner",
+    "time": 18,
+    "body": "Neuroanatomy studies nervous system structures and their connections. The CNS comprises brain and spinal cord; the PNS includes cranial and spinal nerves, ganglia and receptors. Grey matter contains neuronal cell bodies, dendrites, synapses and glia; white matter is rich in myelinated axons. Collections of cell bodies are called nuclei in the CNS and usually ganglia in the PNS. A tract is an axon bundle in the CNS; a nerve is a bundle in the PNS. Directional terms include rostral, caudal, dorsal and ventral, but the neuraxis bends between brain and spinal cord.",
+    "objectives": [
+      "Distinguish CNS and PNS.",
+      "Use tract, nerve, nucleus, ganglion and cortex accurately.",
+      "Explain the bend of the neuraxis."
+    ],
+    "points": [
+      "Ascending pathways generally carry sensory information toward the brain; descending pathways carry motor commands away from the brain.",
+      "In the cerebrum, dorsal is generally superior and ventral inferior; in the spinal cord, dorsal is posterior and ventral anterior.",
+      "Neural localisation combines symptoms, examination and pathway anatomy.",
+      "A single symptom rarely identifies a precise lesion by itself."
+    ],
+    "clinical": "Sudden weakness, facial droop, speech disturbance, seizure or new severe neurological symptoms require urgent medical assessment.",
+    "memoryAid": "“Nucleus inside, ganglion outside; tract inside, nerve outside.” CNS = brain + cord; PNS = nerves + ganglia.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "brainstem-cranial-nerve-nuclei",
+    "icon": "🧠",
+    "title": "Brainstem anatomy and cranial nerve nuclei",
+    "system": "Neuroanatomy",
+    "level": "Advanced",
+    "time": 24,
+    "body": "The brainstem consists of midbrain, pons and medulla. It contains ascending sensory tracts, descending motor pathways, reticular formation, autonomic networks and most cranial nerve nuclei. Cranial nerves III–IV are associated with the midbrain; V–VIII with the pons and pontomedullary region; IX–XII with the medulla, with exceptions such as the spinal accessory nucleus extending into upper cervical cord. Nuclei are arranged in functional columns for motor, parasympathetic and sensory functions. Brainstem lesions can affect cranial nerve function on the lesion side and long tracts serving the body, creating crossed findings.",
+    "objectives": [
+      "Identify the three brainstem divisions.",
+      "Relate cranial nerve nuclei to approximate levels.",
+      "Explain crossed brainstem signs."
+    ],
+    "points": [
+      "Midbrain includes cerebral peduncles and tectum; pons connects cerebrum, cerebellum and medulla; medulla contains important autonomic networks.",
+      "Cranial nerve level is a memory guide, not a replacement for learning each nucleus and its course.",
+      "Corticospinal involvement may cause contralateral body weakness above the pyramidal crossing; cranial nerve deficits are often ipsilateral.",
+      "Reticular formation contributes to arousal and sleep-wake regulation."
+    ],
+    "clinical": "Brainstem stroke may affect eye movements, swallowing, speech, facial sensation, limb strength and consciousness. Sudden symptoms are emergencies.",
+    "memoryAid": "Approximate level cue: III–IV midbrain; V–VIII pons; IX–XII medulla. Remember the spinal accessory nucleus as an upper-cervical exception.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "ascending-sensory-pathways-advanced",
+    "icon": "🖐️",
+    "title": "Ascending sensory pathways: dorsal column, spinothalamic and trigeminal",
+    "system": "Neuroanatomy",
+    "level": "Advanced",
+    "time": 26,
+    "body": "The dorsal column–medial lemniscus pathway carries discriminative touch, vibration and conscious proprioception from the body. First-order fibres ascend ipsilaterally in fasciculus gracilis (lower body) or cuneatus (upper body), synapse in the medulla and cross as internal arcuate fibres before reaching the thalamus and somatosensory cortex. The anterolateral system, including the spinothalamic tract, carries pain and temperature; fibres commonly cross through the anterior white commissure within a few spinal segments. Facial sensation travels mainly through trigeminal pathways. The crossing point is essential for lesion localisation.",
+    "objectives": [
+      "Compare dorsal column and anterolateral modalities.",
+      "Trace where major sensory pathways cross.",
+      "Predict broad deficits from spinal or brain lesions."
+    ],
+    "points": [
+      "DCML fibres ascend ipsilaterally in spinal cord and cross in the caudal medulla.",
+      "Spinothalamic fibres usually cross in the spinal cord near the entry level.",
+      "The thalamus relays most conscious somatic sensory information to primary somatosensory cortex.",
+      "Dermatomes, peripheral nerves, spinal segments and examination refine localisation."
+    ],
+    "clinical": "A hemicord lesion may cause ipsilateral loss of vibration/proprioception and contralateral pain-temperature loss below the lesion, with variation by level and extent.",
+    "memoryAid": "“DCML crosses in the medulla; pain and temperature cross in the spinal cord.” DCML = discriminative touch, vibration, conscious proprioception.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "descending-motor-pathways-advanced",
+    "icon": "💪",
+    "title": "Descending motor pathways and upper versus lower motor neuron lesions",
+    "system": "Neuroanatomy",
+    "level": "Advanced",
+    "time": 26,
+    "body": "Voluntary movement depends on motor cortex, descending pathways, spinal and cranial motor circuits, basal ganglia, cerebellum and sensory feedback. Corticospinal axons pass through the internal capsule, cerebral peduncles, pons and medullary pyramids. Most cross at the pyramidal decussation to form the lateral corticospinal tract. Upper motor neurons influence lower motor neurons, which directly innervate skeletal muscle. Upper motor neuron lesions classically cause weakness, increased tone and exaggerated reflexes after the acute phase; lower motor neuron lesions cause weakness with reduced tone and reflexes and may produce atrophy and fasciculations.",
+    "objectives": [
+      "Trace the corticospinal pathway.",
+      "Distinguish upper and lower motor neuron signs.",
+      "Relate lesion level to side of weakness."
+    ],
+    "points": [
+      "A lesion above the pyramidal crossing commonly causes contralateral weakness; a lateral spinal cord lesion affects ipsilateral descending fibres below it.",
+      "Upper motor neuron signs often include spasticity, hyperreflexia and extensor plantar response.",
+      "Lower motor neuron signs include flaccid weakness, hyporeflexia, atrophy and fasciculations.",
+      "Movement also depends on corticobulbar, cerebellar, basal ganglia and sensory systems."
+    ],
+    "clinical": "Sudden focal weakness can be a stroke or other emergency. Seek urgent medical assessment rather than relying on a learning tool.",
+    "memoryAid": "UMN = often increased tone/reflexes; LMN = reduced tone/reflexes, atrophy and fasciculations. Acute lesions can differ from established patterns.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "cerebellum-basal-ganglia",
+    "icon": "🎯",
+    "title": "Cerebellum and basal ganglia: coordination and movement selection",
+    "system": "Neuroanatomy",
+    "level": "Advanced",
+    "time": 24,
+    "body": "The cerebellum compares intended movement with sensory feedback to calibrate timing, precision, balance and motor learning. It connects with brainstem and cerebral cortex through three paired peduncles. Lesions commonly cause ipsilateral ataxia, dysmetria, intention tremor, nystagmus or gait instability. Basal ganglia circuits—including striatum, globus pallidus, subthalamic nucleus and substantia nigra—help select and scale actions through loops with cortex and thalamus. Dopamine from substantia nigra pars compacta modulates striatal circuits. Different circuit disorders can produce bradykinesia, rigidity, tremor, chorea or dystonia.",
+    "objectives": [
+      "Contrast cerebellar coordination with basal ganglia action selection.",
+      "Identify major structures in each system.",
+      "Relate broad movement signs to system dysfunction."
+    ],
+    "points": [
+      "Cerebellar limb signs are commonly ipsilateral due to the organisation of its connections.",
+      "Cerebellum supports error correction and motor learning.",
+      "Basal ganglia direct/indirect pathway diagrams are simplified models of complex networks.",
+      "Movement abnormalities have multiple causes and require clinical interpretation."
+    ],
+    "clinical": "Ataxia, tremor, rigidity and involuntary movements can arise from many neurological or systemic conditions; the pattern guides assessment but is not a diagnosis alone.",
+    "memoryAid": "Cerebellum = calibrate; basal ganglia = select and scale. Cerebellar limb incoordination is typically ipsilateral.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "limbic-system-memory",
+    "icon": "🧠",
+    "title": "Limbic system, emotion and memory circuits",
+    "system": "Neuroanatomy",
+    "level": "Advanced",
+    "time": 22,
+    "body": "The limbic system is a network rather than a single sharply bounded organ. It includes hippocampal formation, amygdala, cingulate and parahippocampal regions, hypothalamus and selected thalamic nuclei. The hippocampus supports formation of new declarative memories and spatial relationships; the amygdala helps process emotional significance and learned threat; the hypothalamus links motivation and autonomic responses with bodily state. The classic Papez circuit links hippocampal formation, fornix, mammillary bodies, anterior thalamic nuclei and cingulate cortex, but modern models include many additional connections.",
+    "objectives": [
+      "Describe limbic anatomy as a network.",
+      "Distinguish broad roles of hippocampus, amygdala and hypothalamus.",
+      "Trace the classic Papez circuit."
+    ],
+    "points": [
+      "The hippocampus is important for new declarative memory formation, with memory distributed across wider networks.",
+      "The amygdala contributes to emotional learning but is not the sole location of emotion.",
+      "The hypothalamus integrates autonomic, endocrine and behavioural responses.",
+      "Papez circuit is a useful historical model, not a complete map of emotion and memory."
+    ],
+    "clinical": "Memory or emotional changes can have neurological, psychiatric, medication-related, sleep-related or systemic causes and require appropriate assessment.",
+    "memoryAid": "Hippocampus = new memories; amygdala = emotional significance; hypothalamus = homeostatic drive. Papez: hippocampus → fornix → mammillary bodies → anterior thalamus → cingulate cortex.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "ventricles-csf-hydrocephalus",
+    "icon": "💧",
+    "title": "Ventricles, cerebrospinal fluid and hydrocephalus",
+    "system": "Neuroanatomy",
+    "level": "Intermediate",
+    "time": 22,
+    "body": "The ventricular system comprises paired lateral ventricles, third ventricle, cerebral aqueduct and fourth ventricle, which communicates with the subarachnoid space through median and lateral apertures. CSF is produced mainly by choroid plexuses, circulates through ventricles and subarachnoid spaces, and returns to venous circulation through arachnoid granulations and additional drainage routes. CSF cushions the CNS, contributes to chemical stability and supports waste clearance. Obstruction, impaired absorption or rarely excessive production can cause hydrocephalus, with effects depending on mechanism and age.",
+    "objectives": [
+      "Trace CSF flow through the ventricular system.",
+      "Explain key CSF functions.",
+      "Distinguish communicating from non-communicating hydrocephalus."
+    ],
+    "points": [
+      "Lateral ventricles → interventricular foramina → third ventricle → cerebral aqueduct → fourth ventricle → apertures → subarachnoid space.",
+      "The cerebral aqueduct is a narrow passage and a common site of obstructive hydrocephalus.",
+      "Communicating hydrocephalus generally involves impaired flow or absorption beyond ventricular outlets; non-communicating hydrocephalus involves ventricular pathway obstruction.",
+      "Symptoms, age and imaging are interpreted together."
+    ],
+    "clinical": "Severe or worsening headache, repeated vomiting, altered consciousness or new neurological deficits require urgent assessment.",
+    "memoryAid": "CSF route: “Lateral → Third → Aqueduct → Fourth → Out.”",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "neurovascular-stroke-localisation",
+    "icon": "🩸",
+    "title": "Cerebral blood supply and stroke localisation",
+    "system": "Neuroanatomy",
+    "level": "Advanced",
+    "time": 24,
+    "body": "The brain receives arterial blood through paired internal carotid and vertebral arteries. The vertebral arteries unite to form the basilar artery, supplying much of the brainstem, cerebellum and posterior circulation. The anterior and middle cerebral arteries arise from the internal carotid system; posterior cerebral arteries usually arise from the basilar bifurcation. The circle of Willis offers potential collateral connections, but collateral capacity varies and does not guarantee protection from ischaemia. Stroke localisation combines vascular territory with cortical function, visual pathways, brainstem signs and motor/sensory anatomy.",
+    "objectives": [
+      "Outline anterior and posterior cerebral circulations.",
+      "Relate broad ACA, MCA and PCA territories to typical findings.",
+      "Explain the limits of collateral circulation."
+    ],
+    "points": [
+      "ACA lesions often affect medial frontal/parietal regions and may cause prominent contralateral leg weakness or sensory loss.",
+      "MCA lesions often affect lateral hemispheric regions; dominant-side lesions may affect language.",
+      "PCA lesions often affect occipital visual cortex and may cause contralateral visual field deficits.",
+      "Exact findings depend on the vessel, collateral flow and tissue involved."
+    ],
+    "clinical": "Sudden facial droop, arm weakness, speech difficulty, vision loss or severe imbalance requires emergency stroke assessment. Do not delay care to use a learning tool.",
+    "memoryAid": "ACA = leg area; MCA = lateral face/arm and dominant-hemisphere language; PCA = posterior visual cortex. These are broad patterns, not diagnostic rules.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  },
+  {
+    "id": "spinal-cord-tract-lesion-localisation",
+    "icon": "🧵",
+    "title": "Spinal cord pathways and lesion localisation",
+    "system": "Neuroanatomy",
+    "level": "Advanced",
+    "time": 24,
+    "body": "The spinal cord contains segmental grey matter surrounded by white matter columns. Dorsal roots carry sensory afferents into the cord; ventral roots carry motor efferents out. Dorsal columns carry vibration, discriminative touch and conscious proprioception; the anterolateral system carries pain and temperature; corticospinal tracts support voluntary movement. Because these pathways cross at different levels, a unilateral cord lesion may cause ipsilateral motor and dorsal-column deficits with contralateral pain-temperature loss below the lesion. Segmental findings, dermatomes, reflexes and autonomic function refine localisation.",
+    "objectives": [
+      "Identify dorsal and ventral roots and major tracts.",
+      "Explain how crossing levels determine deficit side.",
+      "Apply a structured approach to spinal cord lesion patterns."
+    ],
+    "points": [
+      "Dorsal root ganglia contain primary sensory neuron cell bodies; ventral horn motor neurons send axons through ventral roots.",
+      "Lateral corticospinal lesions in the cord typically affect ipsilateral voluntary motor control below the lesion.",
+      "Dorsal column deficits are ipsilateral below a spinal lesion; spinothalamic deficits are often contralateral and begin slightly below it.",
+      "Brown-Séquard syndrome is a teaching pattern; real cord injuries may be incomplete or mixed."
+    ],
+    "clinical": "New weakness, loss of sensation, saddle anaesthesia or bladder/bowel dysfunction—especially after trauma—requires urgent medical assessment.",
+    "memoryAid": "Dorsal detects; ventral drives. Hemicord cue: ipsilateral motor + vibration/proprioception loss; contralateral pain/temperature loss below the lesion.",
+    "image": "./diagrams/neuroanatomy-pathways.svg"
+  }
+]
