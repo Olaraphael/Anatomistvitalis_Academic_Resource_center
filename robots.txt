@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olaraphael.github.io/Anatomistvitalis_Academic_Resource_center/sitemap.xml
