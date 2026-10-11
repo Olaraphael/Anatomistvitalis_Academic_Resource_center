@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="t d">
+<title id="t">Regional anatomy of the human body</title>
+<desc id="d">Original schematic front and back views of a human figure with highlighted head and neck, thorax, abdomen, pelvis, upper limbs, lower limbs, back and perineum regions.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eff8fb"/><stop offset="1" stop-color="#dcecf2"/></linearGradient><linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e5bda5"/><stop offset="1" stop-color="#bd8e79"/></linearGradient></defs>
+<rect width="960" height="600" rx="28" fill="url(#bg)"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="480" y="42" text-anchor="middle" font-size="25" font-weight="700" fill="#102d43">REGIONAL ANATOMY MAP</text>
+<text x="480" y="67" text-anchor="middle" font-size="14" fill="#557181">A study roadmap • schematic, not to scale</text>
+<g transform="translate(280 90)">
+<text x="0" y="0" text-anchor="middle" font-size="16" font-weight="700" fill="#102d43">ANTERIOR VIEW</text>
+<circle cx="0" cy="49" r="27" fill="url(#body)" stroke="#8d6657" stroke-width="2"/>
+<path d="M-16 75 L-18 98 L-48 115 L-66 179 L-51 184 L-29 137 L-23 197 L-20 248 L-14 276 L-1 276 L0 239 L6 276 L19 276 L24 248 L27 197 L23 137 L47 184 L62 179 L48 115 L18 98 L16 75Z" fill="url(#body)" stroke="#8d6657" stroke-width="2"/>
+<path d="M-16 78 L16 78 L18 100 L-18 100Z" fill="#7b61c9"/>
+<path d="M-28 107 L28 107 L34 146 L-34 146Z" fill="#d97732"/>
+<path d="M-31 147 L31 147 L24 191 L-24 191Z" fill="#18a89a"/>
+<path d="M-23 192 L23 192 L18 216 L-18 216Z" fill="#e7a83f"/>
+<path d="M-46 119 L-60 170 L-52 173 L-35 136Z M46 119 L60 170 L52 173 L35 136Z" fill="#4b84c4"/>
+<path d="M-20 218 L-2 218 L-5 268 L-13 268Z M2 218 L20 218 L13 268 L5 268Z" fill="#4b84c4"/>
+<path d="M-12 276 L-2 276 L-4 290 L-22 290Z M2 276 L12 276 L22 290 L4 290Z" fill="#4b84c4"/>
+<g stroke="#fff" stroke-width="2" fill="none" opacity=".8"><path d="M-30 127 Q0 141 30 127"/><path d="M-22 163 Q0 170 22 163"/></g>
+</g>
+<g transform="translate(520 90)">
+<text x="0" y="0" text-anchor="middle" font-size="16" font-weight="700" fill="#102d43">POSTERIOR VIEW</text>
+<circle cx="0" cy="49" r="27" fill="url(#body)" stroke="#8d6657" stroke-width="2"/>
+<path d="M-16 75 L-18 98 L-48 115 L-66 179 L-51 184 L-29 137 L-23 197 L-20 248 L-14 276 L-1 276 L0 239 L6 276 L19 276 L24 248 L27 197 L23 137 L47 184 L62 179 L48 115 L18 98 L16 75Z" fill="url(#body)" stroke="#8d6657" stroke-width="2"/>
+<path d="M-17 78 L17 78 L18 100 L-18 100Z" fill="#7b61c9"/>
+<path d="M-29 106 L29 106 L34 146 L-34 146Z" fill="#d97732"/>
+<path d="M-30 147 L30 147 L24 190 L-24 190Z" fill="#18a89a"/>
+<path d="M-22 191 L22 191 L18 216 L-18 216Z" fill="#e7a83f"/>
+<path d="M-46 119 L-60 170 L-52 173 L-35 136Z M46 119 L60 170 L52 173 L35 136Z" fill="#4b84c4"/>
+<path d="M-20 218 L-2 218 L-5 268 L-13 268Z M2 218 L20 218 L13 268 L5 268Z" fill="#4b84c4"/>
+<path d="M-12 276 L-2 276 L-4 290 L-22 290Z M2 276 L12 276 L22 290 L4 290Z" fill="#4b84c4"/>
+<path d="M0 107 L0 190" stroke="#fff" stroke-width="3" stroke-dasharray="4 5"/>
+</g>
+<g font-size="15" fill="#17394d" font-weight="700">
+<path d="M252 139 L155 139 L155 120" stroke="#7b61c9" stroke-width="2" fill="none"/><circle cx="252" cy="139" r="4" fill="#7b61c9"/><text x="145" y="116" text-anchor="end">Head &amp; neck</text>
+<path d="M252 218 L150 218 L150 202" stroke="#d97732" stroke-width="2" fill="none"/><circle cx="252" cy="218" r="4" fill="#d97732"/><text x="140" y="198" text-anchor="end">Thorax</text>
+<path d="M252 265 L150 265 L150 250" stroke="#18a89a" stroke-width="2" fill="none"/><circle cx="252" cy="265" r="4" fill="#18a89a"/><text x="140" y="246" text-anchor="end">Abdomen</text>
+<path d="M252 310 L150 310 L150 294" stroke="#e7a83f" stroke-width="2" fill="none"/><circle cx="252" cy="310" r="4" fill="#e7a83f"/><text x="140" y="290" text-anchor="end">Pelvis</text>
+<path d="M334 210 L408 210 L408 194" stroke="#4b84c4" stroke-width="2" fill="none"/><circle cx="334" cy="210" r="4" fill="#4b84c4"/><text x="418" y="190">Upper limb</text>
+<path d="M300 360 L380 360 L380 344" stroke="#4b84c4" stroke-width="2" fill="none"/><circle cx="300" cy="360" r="4" fill="#4b84c4"/><text x="390" y="340">Lower limb</text>
+<path d="M540 215 L635 215 L635 199" stroke="#d97732" stroke-width="2" fill="none"/><circle cx="540" cy="215" r="4" fill="#d97732"/><text x="645" y="195">Back</text>
+<path d="M520 310 L635 310 L635 294" stroke="#e7a83f" stroke-width="2" fill="none"/><circle cx="520" cy="310" r="4" fill="#e7a83f"/><text x="645" y="290">Perineum</text>
+</g>
+<g transform="translate(730 390)">
+<rect x="-145" y="-24" width="195" height="105" rx="14" fill="#fff" stroke="#cbdfe7"/>
+<text x="-128" y="0" font-size="13" font-weight="700" fill="#102d43">REGIONS TO MASTER</text>
+<text x="-128" y="23" font-size="12" fill="#557181">Topography • layers</text>
+<text x="-128" y="42" font-size="12" fill="#557181">Neurovascular supply</text>
+<text x="-128" y="61" font-size="12" fill="#557181">Clinical relationships</text>
+</g>
+<text x="480" y="566" text-anchor="middle" font-size="13" fill="#557181">Use the regional cards below to open focused lessons and revision points.</text>
+</g></svg>
