@@ -1,8 +1,10 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v9";
+const CACHE_NAME = "anatomistvitalis-pwa-v10";
 const CORE_ASSETS = [
   "./",
   "./index.html",
   "./manifest.webmanifest",
+  "./question-bank/",
+  "./question-bank/index.html",
   "./icons/icon-192.svg",
   "./icons/icon-512.svg",
   "./icons/icon-192.png",
@@ -56,8 +58,12 @@ const CORE_ASSETS = [
 self.addEventListener("install", event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
-      .then(cache => cache.addAll(CORE_ASSETS))
-      .then(() => self.skipWaiting())
+      .then(cache => Promise.allSettled(CORE_ASSETS.map(asset => cache.add(asset))))
+      .then(results => {
+        const failed = results.filter(result => result.status === "rejected").length;
+        if (failed) console.warn("Some optional offline assets could not be cached:", failed);
+        return self.skipWaiting();
+      })
   );
 });
 
