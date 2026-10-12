@@ -62,7 +62,8 @@ const CORE_ASSETS = [
   "./diagrams/physiotherapy-assessment-sketch.svg",
   "./diagrams/therapeutic-exercise-sketch.svg",
   "./diagrams/neuro-rehabilitation-sketch.svg",
-  "./diagrams/cardiorespiratory-physiotherapy-sketch.svg" 
+  "./diagrams/cardiorespiratory-physiotherapy-sketch.svg",
+  "./diagrams/knee-joint-anatomy-sketch.svg"
 ];
 
 self.addEventListener("install", event => {
@@ -121,7 +122,8 @@ self.addEventListener("fetch", event => {
               else if (path.includes("regional") || path.includes("upper-limb") || path.includes("lower-limb") || path.includes("head-neck") || path.includes("pelvis") || path.includes("thorax") || path.includes("abdominal")) { diagram = "regional-anatomy-map.svg"; label = "Regional anatomy overview"; }
               if (diagram) {
                 const figure = '<figure style="margin:22px 0;background:#f6fafc;border:1px solid #dfe8ee;border-radius:16px;padding:12px"><img src="../../diagrams/' + diagram + '" alt="' + label + '" loading="lazy" style="display:block;width:100%;height:auto;border-radius:10px"><figcaption style="font-size:13px;color:#667b8b;margin:8px 4px 0">' + label + '. Educational schematic from Anatomistvitalis Academic Resource Center.</figcaption></figure>';
-                const introEnd = html.indexOf("</p>", html.indexOf('class="intro"'));
+                const introStart = html.indexOf('class="intro"');
+                const introEnd = introStart >= 0 ? html.indexOf("</p>", introStart) : -1;
                 if (introEnd >= 0) html = html.slice(0, introEnd + 4) + figure + html.slice(introEnd + 4);
               }
             }
