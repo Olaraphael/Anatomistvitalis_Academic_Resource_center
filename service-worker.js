@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v30";
+const CACHE_NAME = "anatomistvitalis-pwa-v31";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -104,6 +104,8 @@ const CORE_ASSETS = [
   "./diagrams/shoulder-joint-schematic.svg",
   "./diagrams/hand-carpal-tunnel-schematic.svg",
   "./diagrams/foot-arches-schematic.svg",
+  "./diagrams/anatomy-history-timeline.svg",
+  "./diagrams/pathology-disease-process.svg",
   "./topics/shoulder/index.html",
   "./topics/thorax-abdomen-regional/index.html",
   "./topics/abdominal-regions-lines/index.html",
