@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v21";
+const CACHE_NAME = "anatomistvitalis-pwa-v22";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -112,6 +112,19 @@ const CORE_ASSETS = [
   "./topics/ascending-sensory-pathways-advanced/index.html",
   "./topics/descending-motor-pathways-advanced/index.html",
   "./topics/cerebral-blood-supply/index.html",
+  "./topics/general-physiology-homeostasis/index.html",
+  "./topics/homeostasis/index.html",
+  "./topics/cardiac/index.html",
+  "./topics/respiratory-physiology/index.html",
+  "./topics/endocrine-physiology/index.html",
+  "./topics/digestive-physiology/index.html",
+  "./topics/upper-limb-regional-anatomy/index.html",
+  "./topics/hand-anatomy/index.html",
+  "./topics/foot-ankle-anatomy/index.html",
+  "./topics/thoracic-organs-anatomy/index.html",
+  "./topics/abdominal-wall-anatomy/index.html",
+  "./topics/pelvis-perineum-anatomy/index.html",
+  "./topics/cardiovascular-gross-anatomy/index.html",
   "./diagrams/abdominal-nine-regions.svg"
 ];
 
