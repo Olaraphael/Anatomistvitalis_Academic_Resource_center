@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v11";
+const CACHE_NAME = "anatomistvitalis-pwa-v12";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -87,24 +87,26 @@ self.addEventListener("fetch", event => {
         .then(async response => {
           if (!response || !response.ok) return response;
           let finalResponse = response;
-          const isTopicArticle = url.pathname.includes("/topics/") &&
-            !url.pathname.endsWith("/topics/") &&
-            !url.pathname.endsWith("/topics/index.html");
+          const isTopicArticle = url.pathname.includes("/topics/") && !url.pathname.endsWith("/topics/") && !url.pathname.endsWith("/topics/index.html");
           if (isTopicArticle) {
-            const html = await response.clone().text();
-            if (html.includes('class="intro"') && !html.includes("Written by Ibine Oladipupo R.")) {
-              const authorIntro = '<div class="author-byline" style="margin:0 0 12px;padding:10px 13px;background:#eaf8f5;border-left:4px solid #087d70;border-radius:0 9px 9px 0;font-size:14px;color:#203747"><strong>Written by Ibine Oladipupo R.</strong> · Anatomistvitalis Academic Resource Center</div><h2 class="article-introduction" style="font-size:22px;color:#0a2034;margin:18px 0 8px">Introduction</h2>';
-              const updatedHtml = html.replace(/<\/h1>/i, "</h1>" + authorIntro);
-              const headers = new Headers(response.headers);
-              headers.delete("content-length");
-              headers.delete("content-encoding");
-              headers.delete("etag");
-              finalResponse = new Response(updatedHtml, {
-                status: response.status,
-                statusText: response.statusText,
-                headers
-              });
+            let html = await response.clone().text();
+            if (!html.includes("Written by Ibine Oladipupo R.")) {
+              const h1End = html.toLowerCase().indexOf("</h1>");
+              if (h1End >= 0) html = html.slice(0,h1End+5) + '<div class="author-byline" style="margin:0 0 12px;padding:10px 13px;background:#eaf8f5;border-left:4px solid #087d70;border-radius:0 9px 9px 0;font-size:14px;color:#203747"><strong>Written by Ibine Oladipupo R.</strong> · Anatomistvitalis Academic Resource Center</div>' + html.slice(h1End+5);
             }
+            if (!html.toLowerCase().includes(">introduction</h2>")) {
+              const introPos = html.indexOf('class="intro"');
+              if (introPos >= 0) { const pStart = html.lastIndexOf("<p",introPos); if(pStart>=0) html=html.slice(0,pStart)+'<h2 class="article-introduction" style="font-size:22px;color:#0a2034;margin:18px 0 8px">Introduction</h2>'+html.slice(pStart); }
+            }
+            if (!html.includes('id="lesson-quiz"')) {
+              const footerPos = html.toLowerCase().lastIndexOf("<footer");
+              const mainEnd = html.toLowerCase().lastIndexOf("</main>");
+              const pos = footerPos >= 0 ? footerPos : mainEnd;
+              if(pos>=0) html=html.slice(0,pos)+"<section id=\"lesson-quiz\" class=\"panel lesson-quiz\" style=\"background:#fff;border:1px solid #dfe8ee;border-radius:16px;padding:22px;margin:24px 0;box-shadow:0 8px 24px #0a203408\"><div style=\"font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#087e74;font-weight:800\">Check your understanding</div><h2 style=\"margin:6px 0 4px;color:#0a2034\">Lesson quiz</h2><p style=\"margin-top:0\">Answer these five questions after studying this article. Reveal each answer to check your understanding. For more practice, use the separate Question Bank.</p><div id=\"lesson-quiz-items\"></div><p style=\"margin:18px 0 0\"><a href=\"../../question-bank/\" style=\"display:inline-block;background:#0a2034;color:#fff;text-decoration:none;padding:11px 16px;border-radius:10px;font-weight:700\">Continue to the separate Question Bank →</a></p></section><script>\n(function(){\n const host=document.getElementById('lesson-quiz-items'); if(!host||host.dataset.ready)return; host.dataset.ready='1';\n const clean=s=>(s||'').split(String.fromCharCode(10)).join(' ').replace(/\\s+/g,' ').trim();\n const title=clean((document.querySelector('main h1')||{}).textContent||document.title.split('|')[0]);\n const intro=clean((document.querySelector('main .intro, main p')||{}).textContent);\n const heads=Array.from(document.querySelectorAll('main h2'));\n function sectionText(words){for(const h of heads){if(words.some(w=>h.textContent.toLowerCase().includes(w))){let n=h.nextElementSibling,a=[];while(n&&!/^H[1-3]$/.test(n.tagName)){if(n.tagName==='P'||n.tagName==='LI')a.push(clean(n.textContent));n=n.nextElementSibling;}if(a.length)return a.join(' ');}}return '';}\n const bullets=Array.from(document.querySelectorAll('main li')).map(x=>clean(x.textContent)).filter(x=>x.length>25);\n const clinical=sectionText(['clinical','applied','relevance']);\n const memory=sectionText(['memory','mnemonic','revision','high-yield','key point']);\n const objectives=sectionText(['objective','learning outcome']);\n const qs=[\n ['What is the main focus of this lesson?',intro||('This lesson focuses on '+title+'.')],\n ['State one important point you should remember from this topic.',bullets[0]||memory||('Explain the central structures and concepts discussed in '+title+'.')],\n ['State another key fact or relationship covered in the article.',bullets[1]||bullets[0]||objectives||('Describe the main components and their functions in '+title+'.')],\n ['How can this topic be applied clinically or practically?',clinical||('Apply the principles from '+title+' to explain normal function and recognise relevant clinical findings; this lesson alone does not establish a diagnosis.')],\n ['What should you be able to explain after studying this article?',objectives||memory||('Summarise the central concepts of '+title+', define important terms, and explain a structure-function relationship.')]\n ];\n const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;');\n host.innerHTML=qs.map((x,i)=>'<article style=\"border-top:1px solid #dfe8ee;padding:14px 0\"><strong style=\"color:#12334b\">'+(i+1)+'. '+esc(x[0])+'</strong><details style=\"margin-top:8px\"><summary style=\"cursor:pointer;color:#087e74;font-weight:750\">Reveal answer</summary><p style=\"margin-bottom:0\">'+esc(x[1])+'</p></details></article>').join('');\n})();\n</script>"+html.slice(pos);
+            }
+            const headers = new Headers(response.headers);
+            headers.delete("content-length"); headers.delete("content-encoding"); headers.delete("etag");
+            finalResponse = new Response(html,{status:response.status,statusText:response.statusText,headers});
           }
           caches.open(CACHE_NAME).then(cache => cache.put(request, finalResponse.clone()));
           return finalResponse;
