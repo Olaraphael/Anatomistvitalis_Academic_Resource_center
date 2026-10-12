@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v28";
+const CACHE_NAME = "anatomistvitalis-pwa-v29";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -100,7 +100,10 @@ const CORE_ASSETS = [
   "./diagrams/blood-components-schematic.svg",
   "./diagrams/endocrine-feedback-axis.svg",
   "./diagrams/digestive-process-schematic.svg",
-  "./diagrams/muscle-contraction-schematic.svg"
+  "./diagrams/muscle-contraction-schematic.svg",
+  "./diagrams/shoulder-joint-schematic.svg",
+  "./diagrams/hand-carpal-tunnel-schematic.svg",
+  "./diagrams/foot-arches-schematic.svg",
   "./topics/shoulder/index.html",
   "./topics/thorax-abdomen-regional/index.html",
   "./topics/abdominal-regions-lines/index.html",
@@ -150,7 +153,7 @@ const CORE_ASSETS = [
   "./topics/biochemistry-molecular/index.html",
   "./topics/metabolism-energy/index.html",
   "./topics/genetics-molecular-medicine/index.html",
-  "./topics/blood-immunity/index.html"
+  "./topics/blood-immunity/index.html",
   "./diagrams/neuron-structure-schematic.svg",
   "./diagrams/abdominal-nine-regions.svg"
 ];
