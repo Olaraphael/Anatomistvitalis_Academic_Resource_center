@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v20";
+const CACHE_NAME = "anatomistvitalis-pwa-v21";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -95,6 +95,23 @@ const CORE_ASSETS = [
   "./topics/bone/index.html",
   "./topics/respiratory-gross-anatomy/index.html",
   "./topics/histology-introduction/index.html",
+  "./diagrams/skull-regions-schematic.svg",
+  "./diagrams/neuron-structure-schematic.svg",
+  "./topics/shoulder/index.html",
+  "./topics/thorax-abdomen-regional/index.html",
+  "./topics/abdominal-regions-lines/index.html",
+  "./topics/head/index.html",
+  "./topics/skull/index.html",
+  "./topics/neuron/index.html",
+  "./topics/meninges/index.html",
+  "./topics/brain/index.html",
+  "./topics/cranial/index.html",
+  "./topics/nervous-system-map/index.html",
+  "./topics/spinal-cord/index.html",
+  "./topics/brainstem-cranial-nerve-nuclei/index.html",
+  "./topics/ascending-sensory-pathways-advanced/index.html",
+  "./topics/descending-motor-pathways-advanced/index.html",
+  "./topics/cerebral-blood-supply/index.html",
   "./diagrams/abdominal-nine-regions.svg"
 ];
 
