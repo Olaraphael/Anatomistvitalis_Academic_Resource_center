@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v25";
+const CACHE_NAME = "anatomistvitalis-pwa-v26";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -137,6 +137,16 @@ const CORE_ASSETS = [
   "./topics/autonomic-physiology/index.html",
   "./topics/reproductive-physiology/index.html",
   "./topics/acid-base-fluid-balance/index.html",
+  "./topics/physiotherapy-foundations/index.html",
+  "./topics/physiotherapy-assessment/index.html",
+  "./topics/therapeutic-exercise/index.html",
+  "./topics/musculoskeletal-rehabilitation/index.html",
+  "./topics/neurological-rehabilitation/index.html",
+  "./topics/cardiorespiratory-physiotherapy/index.html",
+  "./topics/biochemistry-molecular/index.html",
+  "./topics/metabolism-energy/index.html",
+  "./topics/genetics-molecular-medicine/index.html",
+  "./topics/blood-immunity/index.html"
   "./diagrams/neuron-structure-schematic.svg",
   "./diagrams/abdominal-nine-regions.svg"
 ];
