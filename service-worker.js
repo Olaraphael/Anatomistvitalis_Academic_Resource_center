@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v26";
+const CACHE_NAME = "anatomistvitalis-pwa-v27";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -97,6 +97,10 @@ const CORE_ASSETS = [
   "./topics/histology-introduction/index.html",
   "./diagrams/skull-regions-schematic.svg",
   "./diagrams/neuron-structure-schematic.svg",
+  "./diagrams/blood-components-schematic.svg",
+  "./diagrams/endocrine-feedback-axis.svg",
+  "./diagrams/digestive-process-schematic.svg",
+  "./diagrams/muscle-contraction-schematic.svg"
   "./topics/shoulder/index.html",
   "./topics/thorax-abdomen-regional/index.html",
   "./topics/abdominal-regions-lines/index.html",
@@ -201,8 +205,16 @@ self.addEventListener("fetch", event => {
               if (path.includes("embry") || path.includes("gastrulation") || path.includes("germ-layer") || path.includes("fetal") || path.includes("week-one") || path.includes("week-two") || path.includes("week-three") || path.includes("week-four")) { diagram = "embryology-timeline.svg"; label = "Embryology development timeline"; }
               else if (path.includes("cranial")) { diagram = "brainstem-cranial-nerve-levels.svg"; label = "Brainstem and cranial nerve levels"; }
               else if (path.includes("neuro") || path.includes("brain") || path.includes("spinal") || path.includes("mening") || path.includes("neuron") || path.includes("cerebell") || path.includes("limbic") || path.includes("ventric") || path.includes("sensory-motor")) { diagram = "neuroanatomy-pathways.svg"; label = "Neuroanatomical pathways schematic"; }
+              else if (path.includes("blood-components") || path.includes("haemostasis") || path.includes("blood-immunity")) { diagram = "blood-components-schematic.svg"; label = "Blood components schematic"; }
+              else if (path.includes("endocrine") || path.includes("hormone")) { diagram = "endocrine-feedback-axis.svg"; label = "Endocrine feedback axis schematic"; }
+              else if (path.includes("digestive") || path.includes("digestion")) { diagram = "digestive-process-schematic.svg"; label = "Digestive processing and absorption schematic"; }
+              else if (path.includes("muscle-physiology")) { diagram = "muscle-contraction-schematic.svg"; label = "Skeletal muscle contraction schematic"; }
+              else if (path.includes("respiratory")) { diagram = "thorax-lungs-schematic.svg"; label = "Thoracic respiratory anatomy schematic"; }
               else if (path.includes("renal") || path.includes("nephron") || path.includes("urinary")) { diagram = "nephron.svg"; label = "Nephron structure schematic"; }
               else if (path.includes("cardiac") || path.includes("cardiovascular") || path.includes("heart")) { diagram = "cardiac-conduction.svg"; label = "Cardiac conduction schematic"; }
+              else if (path.includes("physiology") || path.includes("homeostasis")) { diagram = "physiology-homeostasis.svg"; label = "Physiological homeostasis schematic"; }
+              else if (path.includes("physiotherapy-assessment") || path.includes("assessment")) { diagram = "physiotherapy-assessment-sketch.svg"; label = "Physiotherapy assessment schematic"; }
+              else if (path.includes("therapeutic-exercise") || path.includes("rehabilitation") || path.includes("physiotherapy")) { diagram = "therapeutic-exercise-sketch.svg"; label = "Rehabilitation and therapeutic exercise schematic"; }
               else if (path.includes("plane") || path.includes("axis") || path.includes("section")) { diagram = "anatomical-planes.svg"; label = "Anatomical planes schematic"; }
               else if (path.includes("regional") || path.includes("upper-limb") || path.includes("lower-limb") || path.includes("head-neck") || path.includes("pelvis") || path.includes("thorax") || path.includes("abdominal")) { diagram = "regional-anatomy-map.svg"; label = "Regional anatomy overview"; }
               if (diagram) {
