@@ -109,6 +109,29 @@ const bank = [
 {"subject":"Physiology","topic":"Blood pressure","kind":"short","q":"What is the basic relationship between mean arterial pressure, cardiac output and systemic vascular resistance?","answer":"Mean arterial pressure is approximately cardiac output multiplied by systemic vascular resistance, with central venous pressure often negligible in the simplified equation."},
 {"subject":"Physiotherapy","topic":"Range of motion","kind":"mcq","q":"Why measure joint range of motion at baseline and follow-up?","options":["To replace all other assessment","To document movement and track change","To determine blood group","To guarantee recovery"],"correct":1,"answer":"Range of motion helps document movement and monitor change alongside symptoms, strength, function and goals."}
 ];
+
+// Standardise every MCQ to five options (A–E) and distribute the answer key across A–E.
+// The added option is deliberately a distractor: each question has one best answer.
+(function balanceMCQOptions(){
+  const questions = bank.filter(item => item.kind === "mcq");
+  questions.forEach((item, index) => {
+    const oldOptions = item.options.slice();
+    const oldCorrect = item.correct;
+    if (oldOptions.length === 4) oldOptions.push("All of the above");
+    else if (oldOptions.length > 5) oldOptions.length = 5;
+    const correctText = oldOptions[oldCorrect];
+    const distractors = oldOptions.filter((_, optionIndex) => optionIndex !== oldCorrect);
+    const target = index % 5;
+    const balanced = [];
+    let distractorIndex = 0;
+    for (let position = 0; position < 5; position++) {
+      balanced.push(position === target ? correctText : distractors[distractorIndex++]);
+    }
+    item.options = balanced;
+    item.correct = target;
+  });
+})();
+
 const $=id=>document.getElementById(id);
 function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function render(){const s=$('subject').value,k=$('kind').value,q=$('search').value.trim().toLowerCase();const list=bank.filter(x=>(!s||x.subject===s)&&(!k||x.kind===k)&&(!q||(x.q+' '+x.topic+' '+x.subject+' '+(x.answer||'')+' '+(x.options||[]).join(' ')).toLowerCase().includes(q)));$('count').textContent=list.length+' questions shown · '+bank.length+' questions in this starter bank';if(!list.length){$('bank').innerHTML='<div class="empty">No questions match these filters. Try another topic or clear the search.</div>';return;}const subjects=[...new Set(list.map(x=>x.subject))];$('bank').innerHTML=subjects.map(subject=>'<section class="group"><h2>'+escapeHTML(subject)+'</h2><p class="groupIntro">'+escapeHTML(({ "Gross Anatomy":"Study regional and systemic anatomy in an orderly sequence, from foundations to applied anatomy.","Neuroanatomy":"Revise pathways, cranial nerves, brain structures and clinical localisation.","Embryology":"Progress from developmental foundations through germ layers, neurulation and fetal circulation.","Histology":"Connect microscopic appearance with tissue structure and function.","Physiology":"Cover the history of the discipline, homeostasis and major organ system functions.","Physiotherapy":"Review assessment, movement, rehabilitation and exercise prescription."})[subject]||'Topic-based revision questions.')+'</p>'+list.filter(x=>x.subject===subject).map((x,i)=>{const idx=bank.indexOf(x);return '<article class="card" data-id="'+idx+'"><div class="meta">'+escapeHTML(x.topic)+' · '+(x.kind==='mcq'?'Multiple choice':'Short answer')+'</div><div class="q">'+(i+1)+'. '+escapeHTML(x.q)+'</div>'+(x.kind==='mcq'?'<div class="opts">'+x.options.map((o,j)=>'<button class="opt" data-choice="'+j+'" data-q="'+idx+'">'+String.fromCharCode(65+j)+'. '+escapeHTML(o)+'</button>').join('')+'</div><div class="answer" id="ans'+idx+'"><strong>Correct answer: '+escapeHTML(x.options[x.correct])+'</strong><br>'+escapeHTML(x.answer)+'</div>':'<button class="reveal" data-reveal="'+idx+'">Show answer</button><div class="answer" id="ans'+idx+'">'+escapeHTML(x.answer)+'</div>')+'</article>';}).join('')+'</section>').join('');}
