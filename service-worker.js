@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v24";
+const CACHE_NAME = "anatomistvitalis-pwa-v25";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -202,7 +202,7 @@ self.addEventListener("fetch", event => {
                 if (introEnd >= 0) html = html.slice(0, introEnd + 4) + figure + html.slice(introEnd + 4);
               }
             }
-            if (!html.includes('id="lesson-quiz"')) {
+            if (!html.includes('id="lesson-quiz"') && !html.includes("Check your understanding")) {
               const footerPos = html.toLowerCase().lastIndexOf("<footer");
               const mainEnd = html.toLowerCase().lastIndexOf("</main>");
               const pos = footerPos >= 0 ? footerPos : mainEnd;
