@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v19";
+const CACHE_NAME = "anatomistvitalis-pwa-v20";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -74,6 +74,27 @@ const CORE_ASSETS = [
   "./diagrams/cardiorespiratory-physiotherapy-sketch.svg",
   "./diagrams/knee-joint-anatomy-sketch.svg",
   "./diagrams/abdominal-quadrants.svg",
+  "./diagrams/body-cavities-schematic.svg",
+  "./diagrams/levels-of-organisation.svg",
+  "./diagrams/membrane-transport-schematic.svg",
+  "./diagrams/axial-appendicular-skeleton.svg",
+  "./diagrams/animal-cell-organelles.svg",
+  "./topics/anatomy-history/index.html",
+  "./topics/anatomical-language/index.html",
+  "./topics/directional-terms-regions/index.html",
+  "./topics/body-divisions-cavities/index.html",
+  "./topics/anatomical-movements/index.html",
+  "./topics/levels-of-organisation/index.html",
+  "./topics/anatomical-nomenclature/index.html",
+  "./topics/gross-anatomy-methods/index.html",
+  "./topics/planes-axes-sections/index.html",
+  "./topics/four-tissue-classes/index.html",
+  "./topics/cell/index.html",
+  "./topics/cell-organelle/index.html",
+  "./topics/skeletal-system-overview/index.html",
+  "./topics/bone/index.html",
+  "./topics/respiratory-gross-anatomy/index.html",
+  "./topics/histology-introduction/index.html",
   "./diagrams/abdominal-nine-regions.svg"
 ];
 
