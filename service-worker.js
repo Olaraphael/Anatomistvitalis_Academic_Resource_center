@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v7";
+const CACHE_NAME = "anatomistvitalis-pwa-v8";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -20,6 +20,7 @@ const CORE_ASSETS = [
   "./diagrams/germ-layer-derivatives.svg",
   "./memory-aids/index.html",
   "./topics/index.html",
+  "./study-guides/index.html",
   "./topics/embryology-history-introduction/index.html",
   "./topics/gametogenesis-fertilisation/index.html",
   "./topics/week-one-cleavage-blastocyst/index.html",
