@@ -84,9 +84,9 @@ async function installApp() {
   const isAppleMobile = /iphone|ipad|ipod/i.test(ua);
   const isAndroid = /android/i.test(ua);
   if (isAppleMobile) {
-    setStatus('On iPhone/iPad: open this page in Safari, tap Share, then choose “Add to Home Screen”.');
+    setStatus('iPhone/iPad: open this page in Safari, tap Share, choose “Add to Home Screen”, enable “Open as Web App” if shown, then tap Add.');
   } else if (isAndroid) {
-    setStatus('On Android: open this exact HTTPS website in Chrome, refresh it while online, then tap ⋮ > “Install app” or “Add to Home screen”. If the option is absent, Chrome has not yet recognised the site as installable.');
+    setStatus('Android phone: open the live HTTPS homepage in the full Google Chrome app, not inside Facebook, WhatsApp or another app. Stay on the page for at least 30 seconds and interact with it, then refresh. Tap ⋮ and choose “Install app” or “Add to Home screen”. If neither appears, update Chrome and try again after the service worker has activated. Read the installation guide below.');
   } else {
     setStatus('Open this HTTPS site in Chrome or Edge and use the browser menu or address-bar install icon. Installation is not offered by every browser.');
   }
@@ -122,7 +122,7 @@ async function checkInstallReadiness() {
 
 if ('serviceWorker' in navigator && location.protocol === 'https:') {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./service-worker.js').catch(error => {
+    navigator.serviceWorker.register('./service-worker.js', {updateViaCache:'none'}).then(registration => registration.update()).catch(error => {
       console.warn('App offline support could not be registered:', error);
     });
   });
