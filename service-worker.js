@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v29";
+const CACHE_NAME = "anatomistvitalis-pwa-v30";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -155,6 +155,13 @@ const CORE_ASSETS = [
   "./topics/genetics-molecular-medicine/index.html",
   "./topics/blood-immunity/index.html",
   "./diagrams/neuron-structure-schematic.svg",
+  "./topics/pregnancy-development/index.html",
+  "./topics/connective-tissue/index.html",
+  "./topics/muscle-histology/index.html",
+  "./topics/lung-histology-gas-barrier/index.html",
+  "./topics/bone-classification-landmarks/index.html",
+  "./topics/joints-classification/index.html",
+  "./topics/vertebral-column-anatomy/index.html",
   "./diagrams/abdominal-nine-regions.svg"
 ];
 
