@@ -79,4 +79,4 @@ function render(){const s=$('subject').value,k=$('kind').value,q=$('search').val
 $('bank').addEventListener('click',e=>{const choice=e.target.closest('[data-choice]');if(choice){const idx=Number(choice.dataset.q),selected=Number(choice.dataset.choice),x=bank[idx],card=choice.closest('.card');card.querySelectorAll('.opt').forEach(b=>{b.disabled=true;const n=Number(b.dataset.choice);if(n===x.correct)b.classList.add('right');if(n===selected&&selected!==x.correct)b.classList.add('wrong');});$('ans'+idx).classList.add('open');return;}const reveal=e.target.closest('[data-reveal]');if(reveal){const a=$('ans'+reveal.dataset.reveal);a.classList.toggle('open');reveal.textContent=a.classList.contains('open')?'Hide answer':'Show answer';}});
 ['search','subject','kind'].forEach(id=>$(id).addEventListener(id==='search'?'input':'change',render));render();
 </script>
-</body></html>
+<script>if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("../service-worker.js",{updateViaCache:"none"}).then(registration=>registration.update()).catch(()=>{}));}</script></body></html>
