@@ -59,6 +59,7 @@ const CORE_ASSETS = [
   "./topics/musculoskeletal-rehabilitation/index.html",
   "./topics/neurological-rehabilitation/index.html",
   "./topics/cardiorespiratory-physiotherapy/index.html",
+  "./pro/index.html",
   "./diagrams/physiotherapy-assessment-sketch.svg",
   "./diagrams/therapeutic-exercise-sketch.svg",
   "./diagrams/neuro-rehabilitation-sketch.svg",
