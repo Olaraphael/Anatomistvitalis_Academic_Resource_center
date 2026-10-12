@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v12";
+const CACHE_NAME = "anatomistvitalis-pwa-v13";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -97,6 +97,23 @@ self.addEventListener("fetch", event => {
             if (!html.toLowerCase().includes(">introduction</h2>")) {
               const introPos = html.indexOf('class="intro"');
               if (introPos >= 0) { const pStart = html.lastIndexOf("<p",introPos); if(pStart>=0) html=html.slice(0,pStart)+'<h2 class="article-introduction" style="font-size:22px;color:#0a2034;margin:18px 0 8px">Introduction</h2>'+html.slice(pStart); }
+            }
+            if (!html.includes("Original educational line art created for Anatomistvitalis")) {
+              const path = url.pathname.toLowerCase();
+              let diagram = "";
+              let label = "";
+              if (path.includes("embry") || path.includes("gastrulation") || path.includes("germ-layer") || path.includes("fetal") || path.includes("week-one") || path.includes("week-two") || path.includes("week-three") || path.includes("week-four")) { diagram = "embryology-timeline.svg"; label = "Embryology development timeline"; }
+              else if (path.includes("cranial")) { diagram = "brainstem-cranial-nerve-levels.svg"; label = "Brainstem and cranial nerve levels"; }
+              else if (path.includes("neuro") || path.includes("brain") || path.includes("spinal") || path.includes("mening") || path.includes("neuron") || path.includes("cerebell") || path.includes("limbic") || path.includes("ventric") || path.includes("sensory-motor")) { diagram = "neuroanatomy-pathways.svg"; label = "Neuroanatomical pathways schematic"; }
+              else if (path.includes("renal") || path.includes("nephron") || path.includes("urinary")) { diagram = "nephron.svg"; label = "Nephron structure schematic"; }
+              else if (path.includes("cardiac") || path.includes("cardiovascular") || path.includes("heart")) { diagram = "cardiac-conduction.svg"; label = "Cardiac conduction schematic"; }
+              else if (path.includes("plane") || path.includes("axis") || path.includes("section")) { diagram = "anatomical-planes.svg"; label = "Anatomical planes schematic"; }
+              else if (path.includes("regional") || path.includes("upper-limb") || path.includes("lower-limb") || path.includes("head-neck") || path.includes("pelvis") || path.includes("thorax") || path.includes("abdominal")) { diagram = "regional-anatomy-map.svg"; label = "Regional anatomy overview"; }
+              if (diagram) {
+                const figure = '<figure style="margin:22px 0;background:#f6fafc;border:1px solid #dfe8ee;border-radius:16px;padding:12px"><img src="../../diagrams/' + diagram + '" alt="' + label + '" loading="lazy" style="display:block;width:100%;height:auto;border-radius:10px"><figcaption style="font-size:13px;color:#667b8b;margin:8px 4px 0">' + label + '. Educational schematic from Anatomistvitalis Academic Resource Center.</figcaption></figure>';
+                const introEnd = html.indexOf("</p>", html.indexOf('class="intro"'));
+                if (introEnd >= 0) html = html.slice(0, introEnd + 4) + figure + html.slice(introEnd + 4);
+              }
             }
             if (!html.includes('id="lesson-quiz"')) {
               const footerPos = html.toLowerCase().lastIndexOf("<footer");
