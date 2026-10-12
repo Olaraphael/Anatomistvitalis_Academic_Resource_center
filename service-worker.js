@@ -52,7 +52,17 @@ const CORE_ASSETS = [
   "./topics/endocrine-physiology/index.html",
   "./topics/muscle-physiology/index.html",
   "./topics/autonomic-physiology/index.html",
-  "./topics/digestive-physiology/index.html"
+  "./topics/digestive-physiology/index.html",
+  "./topics/physiotherapy-foundations/index.html",
+  "./topics/physiotherapy-assessment/index.html",
+  "./topics/therapeutic-exercise/index.html",
+  "./topics/musculoskeletal-rehabilitation/index.html",
+  "./topics/neurological-rehabilitation/index.html",
+  "./topics/cardiorespiratory-physiotherapy/index.html",
+  "./diagrams/physiotherapy-assessment-sketch.svg",
+  "./diagrams/therapeutic-exercise-sketch.svg",
+  "./diagrams/neuro-rehabilitation-sketch.svg",
+  "./diagrams/cardiorespiratory-physiotherapy-sketch.svg" 
 ];
 
 self.addEventListener("install", event => {
