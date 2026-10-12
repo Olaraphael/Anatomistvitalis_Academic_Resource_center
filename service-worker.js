@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v8";
+const CACHE_NAME = "anatomistvitalis-pwa-v9";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -38,7 +38,19 @@ const CORE_ASSETS = [
   "./topics/limbic-system-memory/index.html",
   "./topics/ventricles-csf-hydrocephalus/index.html",
   "./topics/neurovascular-stroke-localisation/index.html",
-  "./topics/spinal-cord-tract-lesion-localisation/index.html"
+  "./topics/spinal-cord-tract-lesion-localisation/index.html",
+  "./topics/embryology-principles/index.html",
+  "./topics/gametogenesis-fertilisation/index.html",
+  "./topics/germ-layers-organogenesis/index.html",
+  "./topics/neuron/index.html",
+  "./topics/general-physiology-homeostasis/index.html",
+  "./topics/cardiovascular-physiology/index.html",
+  "./topics/respiratory-physiology/index.html",
+  "./topics/renal-physiology/index.html",
+  "./topics/endocrine-physiology/index.html",
+  "./topics/muscle-physiology/index.html",
+  "./topics/autonomic-physiology/index.html",
+  "./topics/digestive-physiology/index.html"
 ];
 
 self.addEventListener("install", event => {
