@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v10";
+const CACHE_NAME = "anatomistvitalis-pwa-v11";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -84,12 +84,30 @@ self.addEventListener("fetch", event => {
   if (request.mode === "navigate") {
     event.respondWith(
       fetch(request)
-        .then(response => {
-          if (response && response.ok) {
-            const copy = response.clone();
-            caches.open(CACHE_NAME).then(cache => cache.put(request, copy));
+        .then(async response => {
+          if (!response || !response.ok) return response;
+          let finalResponse = response;
+          const isTopicArticle = url.pathname.includes("/topics/") &&
+            !url.pathname.endsWith("/topics/") &&
+            !url.pathname.endsWith("/topics/index.html");
+          if (isTopicArticle) {
+            const html = await response.clone().text();
+            if (html.includes('class="intro"') && !html.includes("Written by Ibine Oladipupo R.")) {
+              const authorIntro = '<div class="author-byline" style="margin:0 0 12px;padding:10px 13px;background:#eaf8f5;border-left:4px solid #087d70;border-radius:0 9px 9px 0;font-size:14px;color:#203747"><strong>Written by Ibine Oladipupo R.</strong> · Anatomistvitalis Academic Resource Center</div><h2 class="article-introduction" style="font-size:22px;color:#0a2034;margin:18px 0 8px">Introduction</h2>';
+              const updatedHtml = html.replace(/<\/h1>/i, "</h1>" + authorIntro);
+              const headers = new Headers(response.headers);
+              headers.delete("content-length");
+              headers.delete("content-encoding");
+              headers.delete("etag");
+              finalResponse = new Response(updatedHtml, {
+                status: response.status,
+                statusText: response.statusText,
+                headers
+              });
+            }
           }
-          return response;
+          caches.open(CACHE_NAME).then(cache => cache.put(request, finalResponse.clone()));
+          return finalResponse;
         })
         .catch(() => caches.match(request).then(cached => cached || caches.match(new URL("index.html", request.url).toString()).then(page => page || caches.match("./index.html"))))
     );
