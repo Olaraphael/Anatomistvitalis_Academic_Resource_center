@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v14";
+const CACHE_NAME = "anatomistvitalis-pwa-v15";
 const CORE_ASSETS = [
   "./",
   "./index.html",
@@ -64,7 +64,9 @@ const CORE_ASSETS = [
   "./diagrams/therapeutic-exercise-sketch.svg",
   "./diagrams/neuro-rehabilitation-sketch.svg",
   "./diagrams/cardiorespiratory-physiotherapy-sketch.svg",
-  "./diagrams/knee-joint-anatomy-sketch.svg"
+  "./diagrams/knee-joint-anatomy-sketch.svg",
+  "./diagrams/abdominal-quadrants.svg",
+  "./diagrams/abdominal-nine-regions.svg"
 ];
 
 self.addEventListener("install", event => {
