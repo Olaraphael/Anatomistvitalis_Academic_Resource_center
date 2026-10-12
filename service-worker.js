@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v23";
+const CACHE_NAME = "anatomistvitalis-pwa-v24";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
@@ -137,7 +137,7 @@ const CORE_ASSETS = [
   "./topics/autonomic-physiology/index.html",
   "./topics/reproductive-physiology/index.html",
   "./topics/acid-base-fluid-balance/index.html",
-  "./diagrams/neuron-structure-schematic.svg"
+  "./diagrams/neuron-structure-schematic.svg",
   "./diagrams/abdominal-nine-regions.svg"
 ];
 
@@ -184,7 +184,7 @@ self.addEventListener("fetch", event => {
               const introPos = html.indexOf('class="intro"');
               if (introPos >= 0) { const pStart = html.lastIndexOf("<p",introPos); if(pStart>=0) html=html.slice(0,pStart)+'<h2 class="article-introduction" style="font-size:22px;color:#0a2034;margin:18px 0 8px">Introduction</h2>'+html.slice(pStart); }
             }
-            if (!html.includes("Original educational line art created for Anatomistvitalis")) {
+            if (!html.includes("Original educational line art created for Anatomistvitalis") && !/<img\b/i.test(html)) {
               const path = url.pathname.toLowerCase();
               let diagram = "";
               let label = "";
