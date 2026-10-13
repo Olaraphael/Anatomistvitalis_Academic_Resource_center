@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v43";
+const CACHE_NAME = "anatomistvitalis-pwa-v44";
 const CORE_ASSETS = [
   "./topics/visual-atlas/index.html",
   "./topics/research-methodology-hub/index.html",
@@ -287,7 +287,7 @@ self.addEventListener("fetch", event => {
                 if (introEnd >= 0) html = html.slice(0, introEnd + 4) + figure + html.slice(introEnd + 4);
               }
             }
-            if (!html.includes('id="lesson-quiz"') && !html.includes("Check your understanding")) {
+            if (!html.includes('data-subject-hub="true"') && !html.includes('id="lesson-quiz"') && !html.includes("Check your understanding")) {
               const footerPos = html.toLowerCase().lastIndexOf("<footer");
               const mainEnd = html.toLowerCase().lastIndexOf("</main>");
               const pos = footerPos >= 0 ? footerPos : mainEnd;
