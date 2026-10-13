@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v35";
+const CACHE_NAME = "anatomistvitalis-pwa-v36";
 const CORE_ASSETS = [
   "./diagrams/four-basic-tissue-classes.svg",
   "./diagrams/thorax-lungs-schematic.svg",
