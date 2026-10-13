@@ -1,5 +1,6 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v51";
+const CACHE_NAME = "anatomistvitalis-pwa-v52";
 const CORE_ASSETS = [
+  "./topics/lower-limb-regional-anatomy/index.html",
   "./topics/biomedical-sciences/index.html",
   "./topics/visual-atlas/index.html",
   "./topics/research-methodology-hub/index.html",
