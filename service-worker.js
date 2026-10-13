@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v50";
+const CACHE_NAME = "anatomistvitalis-pwa-v51";
 const CORE_ASSETS = [
   "./topics/biomedical-sciences/index.html",
   "./topics/visual-atlas/index.html",
