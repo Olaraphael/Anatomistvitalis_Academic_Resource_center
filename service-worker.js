@@ -1,5 +1,6 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v49";
+const CACHE_NAME = "anatomistvitalis-pwa-v50";
 const CORE_ASSETS = [
+  "./topics/biomedical-sciences/index.html",
   "./topics/visual-atlas/index.html",
   "./topics/research-methodology-hub/index.html",
   "./topics/physiotherapy/index.html",
@@ -253,7 +254,7 @@ self.addEventListener("fetch", event => {
             if (!html.includes('data-subject-hub="true"') && !html.includes('id="subject-hub-nav"')) {
               const h1End = html.toLowerCase().indexOf("</h1>");
               if (h1End >= 0) {
-                const subjectNav = '<nav id="subject-hub-nav" aria-label="Main subject hubs" style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px;padding:12px;background:#edf6f7;border:1px solid #d8e7eb;border-radius:12px"><a href="../anatomy/" style="font-weight:750">Anatomy</a><a href="../physiology/" style="font-weight:750">Physiology</a><a href="../pathology/" style="font-weight:750">Pathology</a><a href="../physiotherapy/" style="font-weight:750">Physiotherapy</a><a href="../research-methodology-hub/" style="font-weight:750">Research</a><a href="../visual-atlas/" style="font-weight:750">Visual atlas</a><a href="../" style="font-weight:750">All topics</a></nav>';
+                const subjectNav = '<nav id="subject-hub-nav" aria-label="Main subject hubs" style="display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 18px;padding:12px;background:#edf6f7;border:1px solid #d8e7eb;border-radius:12px"><a href="../anatomy/" style="font-weight:750">Anatomy</a><a href="../physiology/" style="font-weight:750">Physiology</a><a href="../pathology/" style="font-weight:750">Pathology</a><a href="../physiotherapy/" style="font-weight:750">Physiotherapy</a><a href="../research-methodology-hub/" style="font-weight:750">Research</a><a href="../visual-atlas/" style="font-weight:750">Visual atlas</a><a href="../biomedical-sciences/" style="font-weight:750">Biomedical sciences</a><a href="../" style="font-weight:750">All topics</a></nav>';
                 html = html.slice(0, h1End + 5) + subjectNav + html.slice(h1End + 5);
               }
             }
