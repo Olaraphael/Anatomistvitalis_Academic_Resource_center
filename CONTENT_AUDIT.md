@@ -30,8 +30,8 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [ascending-sensory-pathways-advanced](topics/ascending-sensory-pathways-advanced/) | Baseline structure inventoried; detailed content review pending |
 | [autonomic-physiology](topics/autonomic-physiology/) | Baseline structure inventoried; detailed content review pending |
 | [biochemistry-molecular](topics/biochemistry-molecular/) | Targeted remediation committed; continue full content and fact-check |
-| [blood-components](topics/blood-components/) | Baseline structure inventoried; detailed content review pending |
-| [blood-immunity](topics/blood-immunity/) | Baseline structure inventoried; detailed content review pending |
+| [blood-components](topics/blood-components/) | Targeted remediation committed; continue full content and fact-check |
+| [blood-immunity](topics/blood-immunity/) | Targeted remediation committed; continue full content and fact-check |
 | [body-divisions-cavities](topics/body-divisions-cavities/) | Targeted remediation committed; continue full content and fact-check |
 | [bone](topics/bone/) | Targeted remediation committed; continue full content and fact-check |
 | [bone-classification-landmarks](topics/bone-classification-landmarks/) | Baseline structure inventoried; detailed content review pending |
@@ -42,7 +42,7 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [cardiac-electrical-conduction](topics/cardiac-electrical-conduction/) | Targeted remediation committed; continue full content and fact-check |
 | [cardiac-output-vascular-resistance](topics/cardiac-output-vascular-resistance/) | Targeted remediation committed; continue full content and fact-check |
 | [cardiorespiratory-physiotherapy](topics/cardiorespiratory-physiotherapy/) | Targeted remediation committed; continue full content and fact-check |
-| [cardiovascular-gross-anatomy](topics/cardiovascular-gross-anatomy/) | Baseline structure inventoried; detailed content review pending |
+| [cardiovascular-gross-anatomy](topics/cardiovascular-gross-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [cardiovascular-physiology](topics/cardiovascular-physiology/) | Baseline structure inventoried; detailed content review pending |
 | [cartilage-and-connective-tissue-histology](topics/cartilage-and-connective-tissue-histology/) | Targeted remediation committed; continue full content and fact-check |
 | [cell](topics/cell/) | Baseline structure inventoried; detailed content review pending |
@@ -73,8 +73,8 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [genetics-molecular-medicine](topics/genetics-molecular-medicine/) | Baseline structure inventoried; detailed content review pending |
 | [germ-layers-organogenesis](topics/germ-layers-organogenesis/) | Baseline structure inventoried; detailed content review pending |
 | [gross-anatomy-methods](topics/gross-anatomy-methods/) | Baseline structure inventoried; detailed content review pending |
-| [haemostasis-coagulation](topics/haemostasis-coagulation/) | Baseline structure inventoried; detailed content review pending |
-| [hand-anatomy](topics/hand-anatomy/) | Baseline structure inventoried; detailed content review pending |
+| [haemostasis-coagulation](topics/haemostasis-coagulation/) | Targeted remediation committed; continue full content and fact-check |
+| [hand-anatomy](topics/hand-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [head](topics/head/) | Targeted remediation committed; continue full content and fact-check |
 | [head-neck-regional-anatomy](topics/head-neck-regional-anatomy/) | Baseline structure inventoried; detailed content review pending |
 | [histology-introduction](topics/histology-introduction/) | Baseline structure inventoried; detailed content review pending |
@@ -82,7 +82,7 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [immunology-intro](topics/immunology-intro/) | Baseline structure inventoried; detailed content review pending |
 | [integumentary-system](topics/integumentary-system/) | Baseline structure inventoried; detailed content review pending |
 | [joints-classification](topics/joints-classification/) | Baseline structure inventoried; detailed content review pending |
-| [levels-of-organisation](topics/levels-of-organisation/) | Baseline structure inventoried; detailed content review pending |
+| [levels-of-organisation](topics/levels-of-organisation/) | Targeted remediation committed; continue full content and fact-check |
 | [limbic-system-memory](topics/limbic-system-memory/) | Baseline structure inventoried; detailed content review pending |
 | [lower-limb-regional-anatomy](topics/lower-limb-regional-anatomy/) | Baseline structure inventoried; detailed content review pending |
 | [lung-histology-gas-barrier](topics/lung-histology-gas-barrier/) | Baseline structure inventoried; detailed content review pending |
@@ -120,13 +120,13 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [shoulder](topics/shoulder/) | Targeted remediation committed; continue full content and fact-check |
 | [skeletal-muscle-anatomy](topics/skeletal-muscle-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [skeletal-system-overview](topics/skeletal-system-overview/) | Baseline structure inventoried; detailed content review pending |
-| [skull](topics/skull/) | Baseline structure inventoried; detailed content review pending |
+| [skull](topics/skull/) | Targeted remediation committed; continue full content and fact-check |
 | [special-senses-anatomy](topics/special-senses-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [spinal-cord](topics/spinal-cord/) | Baseline structure inventoried; detailed content review pending |
 | [spinal-cord-tract-lesion-localisation](topics/spinal-cord-tract-lesion-localisation/) | Targeted remediation committed; continue full content and fact-check |
 | [synovial-joints-regional](topics/synovial-joints-regional/) | Targeted remediation committed; continue full content and fact-check |
 | [therapeutic-exercise](topics/therapeutic-exercise/) | Targeted remediation committed; continue full content and fact-check |
-| [thoracic-organs-anatomy](topics/thoracic-organs-anatomy/) | Baseline structure inventoried; detailed content review pending |
+| [thoracic-organs-anatomy](topics/thoracic-organs-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [thorax-abdomen-regional](topics/thorax-abdomen-regional/) | Baseline structure inventoried; detailed content review pending |
 | [upper-limb-regional-anatomy](topics/upper-limb-regional-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [urinary-gross-anatomy](topics/urinary-gross-anatomy/) | Targeted remediation committed; continue full content and fact-check |
