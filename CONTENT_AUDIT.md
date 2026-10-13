@@ -45,7 +45,7 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [cardiovascular-gross-anatomy](topics/cardiovascular-gross-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [cardiovascular-physiology](topics/cardiovascular-physiology/) | Baseline structure inventoried; detailed content review pending |
 | [cartilage-and-connective-tissue-histology](topics/cartilage-and-connective-tissue-histology/) | Targeted remediation committed; continue full content and fact-check |
-| [cell](topics/cell/) | Baseline structure inventoried; detailed content review pending |
+| [cell](topics/cell/) | Targeted remediation committed; continue full content and fact-check |
 | [cell-organelle](topics/cell-organelle/) | Targeted remediation committed; continue full content and fact-check |
 | [cerebellum-basal-ganglia](topics/cerebellum-basal-ganglia/) | Baseline structure inventoried; detailed content review pending |
 | [cerebral-blood-supply](topics/cerebral-blood-supply/) | Targeted remediation committed; continue full content and fact-check |
@@ -69,9 +69,9 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [foot-ankle-anatomy](topics/foot-ankle-anatomy/) | Baseline structure inventoried; detailed content review pending |
 | [four-tissue-classes](topics/four-tissue-classes/) | Baseline structure inventoried; detailed content review pending |
 | [gametogenesis-fertilisation](topics/gametogenesis-fertilisation/) | Baseline structure inventoried; detailed content review pending |
-| [general-physiology-homeostasis](topics/general-physiology-homeostasis/) | Baseline structure inventoried; detailed content review pending |
+| [general-physiology-homeostasis](topics/general-physiology-homeostasis/) | Targeted remediation committed; continue full content and fact-check |
 | [genetics-molecular-medicine](topics/genetics-molecular-medicine/) | Baseline structure inventoried; detailed content review pending |
-| [germ-layers-organogenesis](topics/germ-layers-organogenesis/) | Baseline structure inventoried; detailed content review pending |
+| [germ-layers-organogenesis](topics/germ-layers-organogenesis/) | Targeted remediation committed; continue full content and fact-check |
 | [gross-anatomy-methods](topics/gross-anatomy-methods/) | Baseline structure inventoried; detailed content review pending |
 | [haemostasis-coagulation](topics/haemostasis-coagulation/) | Targeted remediation committed; continue full content and fact-check |
 | [hand-anatomy](topics/hand-anatomy/) | Targeted remediation committed; continue full content and fact-check |
@@ -95,7 +95,7 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [nervous-system-map](topics/nervous-system-map/) | Targeted remediation committed; continue full content and fact-check |
 | [neuroanatomy-foundations](topics/neuroanatomy-foundations/) | Baseline structure inventoried; detailed content review pending |
 | [neurological-rehabilitation](topics/neurological-rehabilitation/) | Targeted remediation committed; continue full content and fact-check |
-| [neuron](topics/neuron/) | Baseline structure inventoried; detailed content review pending |
+| [neuron](topics/neuron/) | Targeted remediation committed; continue full content and fact-check |
 | [neurovascular-stroke-localisation](topics/neurovascular-stroke-localisation/) | Baseline structure inventoried; detailed content review pending |
 | [pathology-foundations](topics/pathology-foundations/) | Targeted remediation committed; continue full content and fact-check |
 | [pelvis-perineum-anatomy](topics/pelvis-perineum-anatomy/) | Targeted remediation committed; continue full content and fact-check |
