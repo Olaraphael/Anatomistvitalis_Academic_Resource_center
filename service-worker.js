@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v40";
+const CACHE_NAME = "anatomistvitalis-pwa-v41";
 const CORE_ASSETS = [
   "./diagrams/cerebral-arterial-circulation.svg",
   "./topics/bone/index.html",
