@@ -1,5 +1,11 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v41";
+const CACHE_NAME = "anatomistvitalis-pwa-v42";
 const CORE_ASSETS = [
+  "./topics/visual-atlas/index.html",
+  "./topics/research-methodology-hub/index.html",
+  "./topics/physiotherapy/index.html",
+  "./topics/pathology/index.html",
+  "./topics/physiology/index.html",
+  "./topics/anatomy/index.html",
   "./diagrams/cerebral-arterial-circulation.svg",
   "./topics/bone/index.html",
   "./topics/anatomical-nomenclature/index.html",
