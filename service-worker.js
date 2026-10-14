@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v56";
+const CACHE_NAME = "anatomistvitalis-pwa-v57";
 const CORE_ASSETS = [
   "./topics/pelvic-clinical-obstetric-anatomy/index.html",
   "./topics/perineum-pudendal-nerve/index.html",
