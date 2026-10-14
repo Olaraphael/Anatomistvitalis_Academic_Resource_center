@@ -196,3 +196,13 @@ The first lightweight link scan reported two false positives caused by root-rela
 - Bumped the service-worker cache from v56 to v57 to encourage phones with stale cached pages to fetch the updated content. The seven pelvic-course pages remain listed in the core precache.
 - Repository checks confirm the pelvic course hub and its six linked lesson files exist. A persistent blank page on the published site may indicate a stale browser/service-worker cache or a GitHub Pages deployment issue; the live rendering has not been independently confirmed in this turn. Recheck the live URL after Pages finishes rebuilding and reload/clear cached site data if necessary.
 - This remains a targeted expansion and audit, not a completed site-wide content, medical accuracy, image-rendering or licensing audit. Continue article-by-article through histology, regional anatomy, physiology and the remaining neuroanatomy pages.
+
+
+### Musculoskeletal anatomy content audit — 14 October 2026
+
+- Expanded the skeletal muscle anatomy lesson beyond origin/insertion summaries to cover connective-tissue hierarchy, fascicle architecture, force and moment arms, two-joint muscles, motor units, recruitment, compartment patterns and a structured examination/localisation approach.
+- Expanded bone tissue/remodelling to cover osteoid and mineral matrix, osteons and trabeculae, osteoblast/osteocyte/osteoclast roles, modelling versus remodelling, fracture healing, mechanotransduction, hormonal regulation and distinct clinical disease mechanisms. Added an inline compact-bone illustration.
+- Expanded skull osteology to cover neurocranium/viscerocranium, cranial fossae, major foramina and transmitted structures, pterion/epidural haematoma, development, sutures, sinuses and temporomandibular joint. Added an inline openly licensed skull specimen photograph.
+- Added source/licence register entries for the new skull, compact-bone and historical muscle-plate images. Images are rendered inline, not as linked thumbnails, and captions distinguish real specimens from historical illustrations.
+- Refreshed service-worker cache to v58 so the new articles and images can be fetched rather than remaining behind stale cache entries.
+- The repository contains 130 topic index pages. A size-based triage identified several hubs and lessons for further review; file size is only a prioritisation signal, not proof of quality. Continue article-by-article and verify scientific detail, link targets, actual image rendering and licence attribution.
