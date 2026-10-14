@@ -152,3 +152,11 @@ These additions include topic-specific self-assessment with answer explanations,
 4. Any disputed or advanced medical claim should be checked against a current standard reference or guideline before being presented as fact.
 
 Do not treat this tracker as a certificate that the full audit is complete. Statuses are intentionally explicit about what has and has not been reviewed.
+
+## Pelvis and perineum remediation — 14 October 2026
+
+- Confirmed the existing `topics/pelvis-perineum-anatomy/` article was present but was too brief to serve as a full lesson; added a prominent course map, deeper anatomical explanation, clinical connections and open-licence visual material.
+- Added six dedicated, linked lessons: `pelvic-bones-landmarks`, `pelvic-viscera-peritoneum`, `pelvic-vessels-nerves`, `pelvic-floor-continence`, `perineum-pudendal-nerve` and `pelvic-clinical-obstetric-anatomy`.
+- Updated both the Anatomy hub and the full topic index to expose the course and each new article directly.
+- Added attribution and licence records for Wikimedia Commons images: Anatomist90's pelvic cavity dissection (CC BY-SA 3.0), Bebop7's perineal specimen image (CC BY-SA 3.0), and William Home Lizars/Wellcome's historical female pelvic vessel-and-nerve engraving (CC BY 4.0). Each lesson caption distinguishes a real specimen photograph from a historical illustration.
+- This is a targeted remediation, not a completed site-wide audit. Remaining work includes checking every anatomy link, testing images in the live mobile view, and auditing all topic articles for depth, clinical accuracy, source quality and licensing.
