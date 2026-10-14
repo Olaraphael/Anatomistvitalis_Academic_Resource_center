@@ -24,7 +24,13 @@ Do not assume an image is free to reuse just because it appears in Google Images
 
 ## Third-party source register
 
-No third-party images are used in the original diagrams currently listed above. If a third-party asset is added later, list it here with complete attribution and licence information before publishing.
+The following externally sourced images are embedded in the learning articles. Each article also carries a visible attribution caption, and the image-credit page records the source and licence:
+
+- Pelvis comparison 3D preview: “3D model of human male and female pelvis” by ramon.gonzalez.cabrera, via Wikimedia Commons, CC BY 4.0. Source page: https://commons.wikimedia.org/wiki/File:3D_model_of_human_male_and_female_pelvis.stl
+- Heart 3D preview: “Realistic Human Heart” by neshallads, via Wikimedia Commons, CC BY 4.0. Source page: https://commons.wikimedia.org/wiki/File:3D_model_of_a_human_heart.stl. The source notes that the model may not be accurate in every detail; it is used only as a visual orientation aid.
+- Brain teaching-model photograph: Wellcome Library, London, via Wikimedia Commons, CC BY 4.0. Source page: https://commons.wikimedia.org/wiki/File:Anatomical_model_of_human_brain,_Wellcome_L0010009.jpg
+
+These third-party assets are not original artwork by Anatomistvitalis. Their captions preserve attribution and link to the original source and licence. Verify each file page again before adapting or redistributing an asset, and record any modifications made.
 
 ## Text and scientific references
 
