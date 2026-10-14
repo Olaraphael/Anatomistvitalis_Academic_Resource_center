@@ -166,3 +166,17 @@ Do not treat this tracker as a certificate that the full audit is complete. Stat
 - Updated both the Anatomy hub and the full topic index to expose the course and each new article directly.
 - Added attribution and licence records for Wikimedia Commons images: Anatomist90's pelvic cavity dissection (CC BY-SA 3.0), Bebop7's perineal specimen image (CC BY-SA 3.0), and William Home Lizars/Wellcome's historical female pelvic vessel-and-nerve engraving (CC BY 4.0). Each lesson caption distinguishes a real specimen photograph from a historical illustration.
 - This is a targeted remediation, not a completed site-wide audit. Remaining work includes checking every anatomy link, testing images in the live mobile view, and auditing all topic articles for depth, clinical accuracy, source quality and licensing.
+
+
+## 14 October 2026 — pelvic and perineal course expansion
+
+- Expanded the pelvis/perineum course hub with a directly embedded cadaveric pelvic-cavity photograph, a female pelvis illustration, and a historical pelvic vessel/nerve plate. Each image is rendered inline as an image; the caption identifies the creator, licence and source page.
+- Expanded the bony pelvis lesson with pelvic-ring load transfer, joint and ligament mechanics, inlet/midpelvis/outlet boundaries, obstetric conjugates, sex-related variation, imaging and common exam traps. Added an inline pelvis illustration.
+- Expanded the pelvic viscera lesson with subperitoneal fascia, bladder and ureter relations, peritoneal pouches, reproductive-organ relationships and CT/MRI orientation.
+- Expanded pelvic vessels/nerves with internal iliac territories, venous plexuses, lymphatic drainage, sacral plexus, pelvic autonomics and localisation.
+- Expanded pelvic-floor/continence with levator ani subdivisions, perineal body, dynamic pressure management, urinary/faecal continence mechanisms and dysfunction concepts. Added an inline historical pelvic plate.
+- Expanded perineum/pudendal nerve with triangles, perineal membrane, ischioanal fossae, muscle layers, pudendal route and applied relationships. Added an inline historical male pelvic/perineal plate.
+- Expanded applied/obstetric pelvic anatomy with labour mechanics, ureteric injury risk, pelvic trauma, imaging localisation and emergency warning signs.
+- Updated image credit register with four attribution/licence entries and refreshed service-worker cache to v54 to reduce stale-page display. All seven pelvic-course pages are listed in the precache.
+- Structural link scan: anatomy hub missing targets = 2; main curriculum missing targets = 2. This is a path-existence check, not a complete sentence-by-sentence medical accuracy audit.
+- Deployment caveat: repository changes are committed; live rendering must still be checked on the published site after GitHub Pages finishes rebuilding. If a previously blank page persists on mobile, reload after the v54 service-worker update or clear the site’s cached data.
