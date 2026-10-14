@@ -4,7 +4,7 @@ Audit tracker created: 13 October 2026.
 
 ## Scope and method
 
-The `topics/` directory contains **117 topic articles**. An initial structural scan inventoried all 117 article directories and checked for common learning-page features: objectives, assessment/answer blocks, image/figure elements, and further-reading/source markers. This is a triage scan, not a claim that every sentence and every external image has already passed full expert review.
+The `topics/` directory contains **123 topic articles** after the 14 October pelvic-course expansion. The initial structural scan inventoried 117 article directories and checked for common learning-page features: objectives, assessment/answer blocks, image/figure elements, and further-reading/source markers. This is a triage scan, not a claim that every sentence and every external image has already passed full expert review.
 
 ## Audit standards
 
@@ -98,7 +98,13 @@ The `topics/` directory contains **117 topic articles**. An initial structural s
 | [neuron](topics/neuron/) | Targeted remediation committed; continue full content and fact-check |
 | [neurovascular-stroke-localisation](topics/neurovascular-stroke-localisation/) | Baseline structure inventoried; detailed content review pending |
 | [pathology-foundations](topics/pathology-foundations/) | Targeted remediation committed; continue full content and fact-check |
-| [pelvis-perineum-anatomy](topics/pelvis-perineum-anatomy/) | Targeted remediation committed; continue full content and fact-check |
+| [pelvis-perineum-anatomy](topics/pelvis-perineum-anatomy/) | Expanded into a six-lesson course; verify live rendering, external images and full factual accuracy |
+| [pelvic-bones-landmarks](topics/pelvic-bones-landmarks/) | New detailed lesson; targeted link and structure checks passed; full expert fact-check pending |
+| [pelvic-viscera-peritoneum](topics/pelvic-viscera-peritoneum/) | New detailed lesson; targeted link and structure checks passed; full expert fact-check pending |
+| [pelvic-vessels-nerves](topics/pelvic-vessels-nerves/) | New detailed lesson; targeted link and structure checks passed; full expert fact-check pending |
+| [pelvic-floor-continence](topics/pelvic-floor-continence/) | New detailed lesson; targeted link and structure checks passed; full expert fact-check pending |
+| [perineum-pudendal-nerve](topics/perineum-pudendal-nerve/) | New detailed lesson; targeted link and structure checks passed; full expert fact-check pending |
+| [pelvic-clinical-obstetric-anatomy](topics/pelvic-clinical-obstetric-anatomy/) | New detailed lesson; targeted link and structure checks passed; full expert fact-check pending |
 | [physiology-course](topics/physiology-course/) | Targeted remediation committed; continue full content and fact-check |
 | [physiotherapy-assessment](topics/physiotherapy-assessment/) | Targeted remediation committed; continue full content and fact-check |
 | [physiotherapy-foundations](topics/physiotherapy-foundations/) | Targeted remediation committed; continue full content and fact-check |
