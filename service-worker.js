@@ -1,6 +1,5 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v61";
+const CACHE_NAME = "anatomistvitalis-pwa-v62";
 const CORE_ASSETS = [
-  "./downloads/Anatomistvitalis_Embryology_Study_Guide.pdf",
   "./topics/pelvic-clinical-obstetric-anatomy/index.html",
   "./topics/perineum-pudendal-nerve/index.html",
   "./topics/pelvic-floor-continence/index.html",
