@@ -117,3 +117,5 @@ def footer(canvas, doc):
 doc=SimpleDocTemplate(OUT,pagesize=A4,rightMargin=20*mm,leftMargin=20*mm,topMargin=18*mm,bottomMargin=22*mm,title="Anatomistvitalis Embryology Study Guide",author="Ibine Oladipupo Rapheal")
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
 print(f"Created {OUT}")
+
+# Build source maintained in-repository for reproducible publication.
