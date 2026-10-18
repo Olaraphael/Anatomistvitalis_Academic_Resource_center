@@ -1,0 +1,35 @@
+name: Build Embryology Study Guide PDF
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - ".github/scripts/generate_embryology_pdf.py"
+      - ".github/workflows/build-embryology-pdf.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install PDF builder
+        run: pip install reportlab
+      - name: Generate study guide
+        run: python .github/scripts/generate_embryology_pdf.py
+      - name: Commit PDF if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add downloads/Anatomistvitalis_Embryology_Study_Guide.pdf
+          if git diff --cached --quiet; then
+            echo "PDF is already current."
+          else
+            git commit -m "Add downloadable Embryology Study Guide PDF"
+            git push
+          fi
