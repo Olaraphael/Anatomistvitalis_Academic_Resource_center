@@ -1,4 +1,4 @@
-const CACHE_NAME = "anatomistvitalis-pwa-v64";
+const CACHE_NAME = "anatomistvitalis-pwa-v65";
 const CORE_ASSETS = [
   "./topics/pelvic-clinical-obstetric-anatomy/index.html",
   "./topics/perineum-pudendal-nerve/index.html",
@@ -84,7 +84,6 @@ const CORE_ASSETS = [
   "./topics/pathology-foundations/index.html",
   "./study-guides/index.html",
   "./downloads/Anatomistvitalis_Embryology_Study_Guide.pdf",
-  "./downloads/Anatomistvitalis_Research_Methodology_Study_Guide.pdf",
   "./topics/embryology-history-introduction/index.html",
   "./topics/gametogenesis-fertilisation/index.html",
   "./topics/week-one-cleavage-blastocyst/index.html",
