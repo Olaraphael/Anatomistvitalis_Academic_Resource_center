@@ -1,6 +1,6 @@
 # Anatomistvitalis Academic Resource Center
 
-A responsive educational website for anatomy, neuroanatomy, embryology, histology and physiology learners. The current curriculum contains 130 topic articles, 73 topic-based question-bank items, original schematic diagrams, a dedicated memory-aid library, topic pages with shareable URLs, local lesson completion tracking, and a Progressive Web App (PWA) manifest with offline caching.
+A responsive educational website for anatomy, neuroanatomy, embryology, histology and physiology learners. The current curriculum contains 130 topic articles, 93 topic-based question-bank items, original schematic diagrams, a dedicated memory-aid library, topic pages with shareable URLs, local lesson completion tracking, and a Progressive Web App (PWA) manifest with offline caching.
 
 ## Publish with GitHub Pages
 
@@ -19,7 +19,7 @@ If the workflow reports that the Pages site was not found, return to **Settings 
 
 - Neuroanatomy now progresses from foundational organisation to sensory and motor pathways, brainstem nuclei, cerebellum, basal ganglia, limbic circuits, CSF flow, spinal cord localisation and stroke anatomy.
 - Embryology progresses from history and developmental principles through gametogenesis, weeks 1–4, organogenesis, fetal circulation, placenta and teratology.
-- Each of the 109 lessons has an individual topic page; the sitemap lists the homepage, topic directory, memory-aid library and all topic URLs.
+- Each of the 130 topic articles has an individual topic page; the sitemap lists the homepage, topic directory, memory-aid library and topic URLs. See `CONTENT_AUDIT.md` for the article inventory and the distinction between structural triage and detailed expert review.
 - Original diagrams are stored as SVG files in `diagrams/`. Mnemonics and retrieval cues are available in lesson modals and at `memory-aids/`.
 - The app manifest includes 192px and 512px PNG icons as well as SVG fallbacks. The service worker caches core files and selected new lessons, and caches other visited pages as they are opened. Installation availability still depends on browser/device support and must be tested on the target device.
 - Google Analytics 4 is configured with Measurement ID `G-MS73LHJC9D`. Verify collection in the GA4 Realtime report and apply any privacy or consent requirements relevant to your audience.
