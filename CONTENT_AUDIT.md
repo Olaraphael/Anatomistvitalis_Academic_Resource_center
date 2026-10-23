@@ -4,7 +4,7 @@ Audit tracker refreshed: 23 October 2026.
 
 ## Scope and method
 
-The `topics/` directory contains **130 topic articles** after the 14 October pelvic-course expansion. The initial structural scan inventoried 117 article directories and checked for common learning-page features: objectives, assessment/answer blocks, image/figure elements, and further-reading/source markers. This is a triage scan, not a claim that every sentence and every external image has already passed full expert review. The repository currently has 130 article directories plus the `topics/index.html` subject directory page. The tracker initially listed 123 article rows; the eight newly discovered pages below are now included as pending detailed review.
+The `topics/` directory contains **130 topic articles** after the 14 October pelvic-course expansion. The initial structural scan inventoried 117 article directories and checked for common learning-page features: objectives, assessment/answer blocks, image/figure elements, and further-reading/source markers. This is a triage scan, not a claim that every sentence and every external image has already passed full expert review. The repository currently has 130 article directories plus the `topics/index.html` subject directory page. The tracker initially listed 123 article rows; the seven newly discovered pages below are now included as pending detailed review.
 
 ## Newly inventoried pages
 
