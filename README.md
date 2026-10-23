@@ -1,6 +1,6 @@
 # Anatomistvitalis Academic Resource Center
 
-A responsive educational website for anatomy, neuroanatomy, embryology, histology and physiology learners. The current curriculum contains 109 individual lessons, 46 self-marking quiz questions, original schematic diagrams, a dedicated memory-aid library, topic pages with shareable URLs, local lesson completion tracking, and a Progressive Web App (PWA) manifest with offline caching.
+A responsive educational website for anatomy, neuroanatomy, embryology, histology and physiology learners. The current curriculum contains 131 topic pages, 73 topic-based question-bank items, original schematic diagrams, a dedicated memory-aid library, topic pages with shareable URLs, local lesson completion tracking, and a Progressive Web App (PWA) manifest with offline caching.
 
 ## Publish with GitHub Pages
 
