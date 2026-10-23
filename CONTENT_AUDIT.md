@@ -33,10 +33,10 @@ The `topics/` directory contains **130 topic articles** after the 14 October pel
 | [abdominal-regions-lines](topics/abdominal-regions-lines/) | Baseline structure inventoried; detailed content review pending |
 | [abdominal-wall-anatomy](topics/abdominal-wall-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [acid-base-fluid-balance](topics/acid-base-fluid-balance/) | Targeted remediation committed; continue full content and fact-check |
-| [anatomical-language](topics/anatomical-language/) | Targeted remediation committed; continue full content and fact-check |
+| [anatomical-language](topics/anatomical-language/) | Expanded with worked examples, common errors and retrieval practice on 23 October; subject-matter and source review still pending |
 | [anatomical-movements](topics/anatomical-movements/) | Targeted remediation committed; continue full content and fact-check |
 | [anatomical-nomenclature](topics/anatomical-nomenclature/) | Targeted remediation committed; continue full content and fact-check |
-| [anatomy-history](topics/anatomy-history/) | Targeted remediation committed; continue full content and fact-check |
+| [anatomy-history](topics/anatomy-history/) | Existing lesson includes history, review questions and reading pointers; detailed fact-check still pending |
 | [ascending-sensory-pathways-advanced](topics/ascending-sensory-pathways-advanced/) | Baseline structure inventoried; detailed content review pending |
 | [autonomic-physiology](topics/autonomic-physiology/) | Baseline structure inventoried; detailed content review pending |
 | [biochemistry-molecular](topics/biochemistry-molecular/) | Targeted remediation committed; continue full content and fact-check |
@@ -144,7 +144,7 @@ The `topics/` directory contains **130 topic articles** after the 14 October pel
 | [therapeutic-exercise](topics/therapeutic-exercise/) | Targeted remediation committed; continue full content and fact-check |
 | [thoracic-organs-anatomy](topics/thoracic-organs-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [thorax-abdomen-regional](topics/thorax-abdomen-regional/) | Baseline structure inventoried; detailed content review pending |
-| [upper-limb-regional-anatomy](topics/upper-limb-regional-anatomy/) | Targeted remediation committed; continue full content and fact-check |
+| [upper-limb-regional-anatomy](topics/upper-limb-regional-anatomy/) | Expanded with regional nerve pathways, clinical reasoning and retrieval practice on 23 October; detailed review still pending |
 | [urinary-gross-anatomy](topics/urinary-gross-anatomy/) | Targeted remediation committed; continue full content and fact-check |
 | [ventricles-csf-hydrocephalus](topics/ventricles-csf-hydrocephalus/) | Targeted remediation committed; continue full content and fact-check |
 | [vertebral-column-anatomy](topics/vertebral-column-anatomy/) | Targeted remediation committed; continue full content and fact-check |
